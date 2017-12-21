@@ -16,3 +16,123 @@ html {
   }
   
   //************************** BASIC END **************************//
+
+  //************************** VARIABLES START **************************//
+  //not for production
+  $_sunglow: #ffd626;
+  $_white: #ffffff;
+  $_black: #000000;
+  $_mastrichBlue: #001232;
+
+  //for production
+  $light: $_white;
+  $dark: $_black;
+  $generalYellow: $_sunglow;
+  $navBgColor: $_mastrichBlue;
+  
+  //************************** VARIABLES END **************************//
+
+  //************************** EXTEND START **************************//
+  //hover state origin
+  .hover-state-origin {
+      animation: hoverStateOrigin .2s forwards;
+
+      @keyframes hoverStateOrigin {
+          0% {transform: scaleY(1);}
+          100% {transform: scaleY(0)}
+      }
+  }
+
+  //hover state
+  .hover-state {
+      animation: hoverState .2s forwards;
+
+      @keyframes hoverState {
+          0% {transform: scaleY(0)}
+          100% {transform: scaleY(1);}
+      }
+  }
+
+  .pointer {cursor: pointer;}
+
+  //************************** EXTEND END **************************//
+
+
+  //************************** GENERAL START **************************//
+  .container {
+      width: 85%; 
+      margin: 0 7.5%;
+    //   border: 1px dotted $light; //temp
+      display: flex;
+  }
+
+  a {text-decoration: none;}
+  
+  //************************** GENERAL END **************************//
+
+  //************************** TOP BAR START **************************//
+  .top-bar-container {
+      width: 100%; height: 65px;
+    //   border: 1px dotted red; //temp
+      background: $navBgColor;
+
+      .container {
+        height: 100%;
+        color: $light;
+        justify-content: flex-end;
+
+        .adr, .tel, .em {
+            display: flex;
+            align-items: baseline;
+            padding: 0 10px;
+
+            i {
+                padding: 10px 12px;
+                border: 2px solid $generalYellow;
+                border-radius: 50%;
+                margin-right: 10px;
+                color: $generalYellow;
+                font-size: 14px;
+                transition: all .2s ease;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                position: relative;
+                z-index: 99;
+               
+                a {color: $light;}
+
+                &:before {
+                    content: "";
+                    width: 103%; height: 100%;
+                    background: $generalYellow;
+                    position: absolute;
+                    transform-origin: bottom;
+                    @extend .hover-state-origin;
+                    z-index: -1;
+                }
+            }
+
+            &:hover {
+                @extend .pointer;
+
+                i {
+                    background: $generalYellow;
+                    color: $dark;
+                }
+
+                p {
+                    &:before { @extend .hover-state; }
+                    color: $dark;
+
+                    a {color: $dark;}
+                }
+            }
+        }
+      }
+  }
+  //************************** TOP BAR END **************************//
+
+      
