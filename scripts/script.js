@@ -42,4 +42,16 @@ $(document).ready(function() {
     $(".src i").on("mouseleave", function() {
         $(".src-input").css("display", "none");
     });
+
+    //sticky nav
+
+    var nav = $(".navigation");
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>65) {
+            nav.addClass("nav-scrolled");
+        } else {
+            nav.removeClass("nav-scrolled");
+        }
+    });
 });

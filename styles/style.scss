@@ -96,7 +96,6 @@ html {
     }
   }
 
-
   .showHiddenMenuR{
     animation: showHiddenMenuR .5s forwards;
 
@@ -105,10 +104,17 @@ html {
         100% {transform: translateX(-20px); opacity: 0;}
     }
   }
+
+  .nav-scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
   //************************** GENERAL END **************************//
 
   //************************** TOP BAR START **************************//
   .top-bar-container {
+      position: fixed;
       width: 100%; height: 65px;
     //   border: 1px dotted red; //temp
       background: $topBarBgColor;
@@ -169,7 +175,10 @@ html {
   nav {
       height: 60px;
       background: $light;
-    //   border: 1px dotted red; //temp
+      position: absolute;
+      width: 100%;
+      top: 65px;
+      z-index: 150;
       .container {
         .logo {
         display: flex;
@@ -179,7 +188,6 @@ html {
         }
 
         .logo, .items {
-            border-bottom: 1px dashed;
             display: flex; flex: 1;
         }
 
@@ -301,6 +309,11 @@ html {
 
     .body-container {
         height: 1000px;
+        background: #fff;
+        top: 125px;
+        position: relative;
     }
+
+
 
       
