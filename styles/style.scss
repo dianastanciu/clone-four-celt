@@ -209,6 +209,10 @@ html {
 
             i {
                 padding: 10px 12px;
+                width: 35px; height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 border: 2px solid $generalYellow;
                 border-radius: 50%;
                 margin-right: 10px;

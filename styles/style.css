@@ -175,6 +175,11 @@ a {
 
 .top-bar-container .container .adr i, .top-bar-container .container .tel i, .top-bar-container .container .em i {
   padding: 10px 12px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #ffd626;
   border-radius: 50%;
   margin-right: 10px;
