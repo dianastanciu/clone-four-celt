@@ -249,13 +249,20 @@ html {
                     }
                 }
             }
+
+            .blg {
+                .hidden-drop-menu {
+                    z-index: 2;
+                }
+            }
+            
             .src { 
                 position: relative;
                 padding: 22px 0;
 
                 i {
                     font-size: 17px;
-                    padding: 22px 0;
+                    padding: 22px 10px;
                 } 
 
                 &:hover {@extend .pointer;}
@@ -268,7 +275,7 @@ html {
                     padding: 10px;
                     width: 250px; height: 70px;
                     background: $light;
-                    opacity: 0;
+                    display: none;
 
                     input {
                         width: 100%;
@@ -290,6 +297,10 @@ html {
     }
   }
 
-  //************************** NAVIGATION END **************************//
+    //************************** NAVIGATION END **************************//
+
+    .body-container {
+        height: 1000px;
+    }
 
       

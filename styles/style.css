@@ -232,6 +232,10 @@ nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items 
   border-left: 4px solid #ffd626;
 }
 
+nav .container .items .blg .hidden-drop-menu {
+  z-index: 2;
+}
+
 nav .container .items .src {
   position: relative;
   padding: 22px 0;
@@ -239,7 +243,7 @@ nav .container .items .src {
 
 nav .container .items .src i {
   font-size: 17px;
-  padding: 22px 0;
+  padding: 22px 10px;
 }
 
 nav .container .items .src .src-input {
@@ -251,7 +255,7 @@ nav .container .items .src .src-input {
   width: 250px;
   height: 70px;
   background: #ffffff;
-  opacity: 0;
+  display: none;
 }
 
 nav .container .items .src .src-input input {
@@ -263,6 +267,10 @@ nav .container .items .src .src-input input {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: #64728A;
+}
+
+.body-container {
+  height: 1000px;
 }
  
 

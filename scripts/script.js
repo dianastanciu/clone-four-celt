@@ -33,10 +33,13 @@ $(document).ready(function() {
     });
 
     $(".src i").on("mouseenter", function() {
-        $(".src-input").css("opacity","1");
+        $(".src-input").css({
+            "display": "block", 
+            "z-index": "2"
+        });
     });
 
-    $(".src").on("mouseleave", function() {
-        $(".src-input").css("opacity","0");
+    $(".src i").on("mouseleave", function() {
+        $(".src-input").css("display", "none");
     });
 });
