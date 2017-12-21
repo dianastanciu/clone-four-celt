@@ -417,12 +417,67 @@ html {
 //************************** FEATURES START **************************//
 
 .features {
-    height: 1600px;
+    height: 600px;
     background: #fff;
-    border-top: 1px solid;
     top: 70px;
     position: relative;
+    .container {
 
+        .item {
+            margin-top: 100px;
+            display: flex;
+            flex: 1;
+            padding: 40px;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            .image, .text {display: flex; flex: 1;}
+
+            .image {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                border-bottom: 5px solid $generalYellow;
+            }
+
+            .text {
+                flex-direction: column;
+                padding: 20px 0;
+                justify-content: space-around;
+
+                .title {
+                    font-size: 20px;
+                    color: $titleColor;
+                }
+
+                .description {
+                    color: $textColor;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                    position: relative;
+                    z-index: 1;
+                    width: 30%;
+                   
+                    @extend .before-p;
+
+                    &:hover {
+                        color: $dark;
+
+                        @extend .pointer;
+        
+                        &:before { @extend .hover-state; }
+                    }
+
+                    a {color: $titleColor;}
+                }
+            }
+        }
+    }
 }
 //************************** FEATURES END **************************//
 

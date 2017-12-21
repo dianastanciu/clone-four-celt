@@ -15,7 +15,7 @@ body {
   padding: 0;
 }
 
-.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .btn-before:before, .header .container .title-container .btn:before {
+.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before {
   animation: hoverStateOrigin .2s forwards;
 }
 
@@ -28,7 +28,7 @@ body {
   }
 }
 
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before {
   animation: hoverState .2s forwards;
 }
 
@@ -41,11 +41,11 @@ body {
   }
 }
 
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover {
   cursor: pointer;
 }
 
-.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before {
+.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before {
   content: "";
   width: 103%;
   height: 100%;
@@ -363,11 +363,65 @@ nav .container .items .src .src-input input {
 }
 
 .features {
-  height: 1600px;
+  height: 600px;
   background: #fff;
-  border-top: 1px solid;
   top: 70px;
   position: relative;
+}
+
+.features .container .item {
+  margin-top: 100px;
+  display: flex;
+  flex: 1;
+  padding: 40px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.features .container .item .image, .features .container .item .text {
+  display: flex;
+  flex: 1;
+}
+
+.features .container .item .image {
+  border-bottom: 5px solid #ffd626;
+}
+
+.features .container .item .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features .container .item .text {
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+.features .container .item .text .title {
+  font-size: 20px;
+  color: #000044;
+}
+
+.features .container .item .text .description {
+  color: #64728A;
+  font-size: 16px;
+}
+
+.features .container .item .text p {
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  width: 30%;
+}
+
+.features .container .item .text p:hover {
+  color: #000000;
+}
+
+.features .container .item .text p a {
+  color: #000044;
 }
  
 
