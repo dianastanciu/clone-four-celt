@@ -15,7 +15,7 @@ body {
   padding: 0;
 }
 
-.hover-state-origin, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before {
+.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before {
   animation: hoverStateOrigin .2s forwards;
 }
 
@@ -28,7 +28,7 @@ body {
   }
 }
 
-.hover-state, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before {
+.hover-state, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before {
   animation: hoverState .2s forwards;
 }
 
@@ -41,12 +41,23 @@ body {
   }
 }
 
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover {
   cursor: pointer;
+}
+
+.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before {
+  content: "";
+  width: 103%;
+  height: 100%;
+  background: #ffd626;
+  position: absolute;
+  transform-origin: bottom;
+  z-index: -1;
 }
 
 .container {
   width: 85%;
+  height: 100%;
   margin: 0 7.5%;
   display: flex;
 }
@@ -55,14 +66,50 @@ a {
   text-decoration: none;
 }
 
+.showHiddenMenu {
+  animation: showHiddenMenu .5s forwards;
+}
+
+@keyframes showHiddenMenu {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.showHiddenMenuR {
+  animation: showHiddenMenuR .5s forwards;
+}
+
+@keyframes showHiddenMenuR {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+.nav-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .top-bar-container {
+  position: fixed;
   width: 100%;
   height: 65px;
   background: #001232;
 }
 
 .top-bar-container .container {
-  height: 100%;
   color: #ffffff;
   justify-content: flex-end;
 }
@@ -87,21 +134,11 @@ a {
   font-size: 16px;
   font-weight: 300;
   position: relative;
-  z-index: 99;
+  z-index: 1;
 }
 
 .top-bar-container .container .adr p a, .top-bar-container .container .tel p a, .top-bar-container .container .em p a {
   color: #ffffff;
-}
-
-.top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before {
-  content: "";
-  width: 103%;
-  height: 100%;
-  background: #ffd626;
-  position: absolute;
-  transform-origin: bottom;
-  z-index: -1;
 }
 
 .top-bar-container .container .adr:hover i, .top-bar-container .container .tel:hover i, .top-bar-container .container .em:hover i {
@@ -115,6 +152,138 @@ a {
 
 .top-bar-container .container .adr:hover p a, .top-bar-container .container .tel:hover p a, .top-bar-container .container .em:hover p a {
   color: #000000;
+}
+
+nav {
+  height: 60px;
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 65px;
+  z-index: 150;
+}
+
+nav .container .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .container .logo img {
+  height: 40px;
+}
+
+nav .container .logo, nav .container .items {
+  display: flex;
+  flex: 1;
+}
+
+nav .container .items {
+  justify-content: space-around;
+  align-items: center;
+  color: #001232;
+}
+
+nav .container .items .hom, nav .container .items .abt, nav .container .items .proj, nav .container .items .serv, nav .container .items .blg, nav .container .items .cntc, nav .container .items .src {
+  display: flex;
+  align-items: baseline;
+}
+
+nav .container .items .hom p, nav .container .items .abt p, nav .container .items .proj p, nav .container .items .serv p, nav .container .items .blg p, nav .container .items .cntc p, nav .container .items .src p {
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  padding: 16px 0;
+}
+
+nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before {
+  height: 45%;
+}
+
+nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover {
+  color: #000000;
+}
+
+nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before {
+  height: 45%;
+}
+
+nav .container .items .hom p:hover a, nav .container .items .abt p:hover a, nav .container .items .proj p:hover a, nav .container .items .serv p:hover a, nav .container .items .blg p:hover a, nav .container .items .cntc p:hover a, nav .container .items .src p:hover a {
+  color: #000000;
+}
+
+nav .container .items .hom i, nav .container .items .abt i, nav .container .items .proj i, nav .container .items .serv i, nav .container .items .blg i, nav .container .items .cntc i, nav .container .items .src i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+nav .container .items .hom, nav .container .items .proj, nav .container .items .serv, nav .container .items .blg {
+  position: relative;
+}
+
+nav .container .items .hom .hidden-drop-menu, nav .container .items .proj .hidden-drop-menu, nav .container .items .serv .hidden-drop-menu, nav .container .items .blg .hidden-drop-menu {
+  width: 250px;
+  height: auto;
+  background: #ffffff;
+  position: absolute;
+  border: 1px solid #EEEEEE;
+  top: 83%;
+  opacity: 0;
+}
+
+nav .container .items .hom .hidden-drop-menu .item, nav .container .items .proj .hidden-drop-menu .item, nav .container .items .serv .hidden-drop-menu .item, nav .container .items .blg .hidden-drop-menu .item {
+  color: #001232;
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  font-weight: 300;
+  transition: all .2s ease;
+}
+
+nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover {
+  border-left: 4px solid #ffd626;
+}
+
+nav .container .items .blg .hidden-drop-menu {
+  z-index: 2;
+}
+
+nav .container .items .src {
+  position: relative;
+  padding: 22px 0;
+}
+
+nav .container .items .src i {
+  font-size: 17px;
+  padding: 22px 10px;
+}
+
+nav .container .items .src .src-input {
+  position: absolute;
+  border: 1px solid #EEEEEE;
+  top: 77%;
+  right: -50%;
+  padding: 10px;
+  width: 250px;
+  height: 70px;
+  background: #ffffff;
+  display: none;
+}
+
+nav .container .items .src .src-input input {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #001232;
+  padding: 0 10px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #64728A;
+}
+
+.body-container {
+  height: 1000px;
+  background: #fff;
+  top: 125px;
+  position: relative;
 }
  
 
