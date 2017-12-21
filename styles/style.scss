@@ -37,6 +37,7 @@ html {
   $searchColor: $_darkBlueGrey;
   $textColor: $_darkBlueGrey;
   $titleColor: $_lightMastrichBlue;
+  $buttonColor: $_mastrichBlue;
   //************************** VARIABLES END **************************//
 
   //************************** EXTEND START **************************//
@@ -76,6 +77,36 @@ html {
     }
   }
 
+
+  //btn:before + hover
+  .btn-before {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%; height: 100%;
+        background: $buttonColor;
+        top: 0; left: 0;
+        transform-origin: bottom;
+        z-index: 1;
+
+        @extend .hover-state-origin;
+
+        &:hover {
+            @extend .hover-state;
+        }
+    }
+  }
+
+  //button template
+  .btn-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; height: 46px;
+    background: $generalYellow;
+    border: none;
+    position: relative;
+  }
   //************************** EXTEND END **************************//
 
 
@@ -361,13 +392,20 @@ html {
                     color: $textColor;
                 }
 
-                button {
-                    width: 150px; height: 46px;
-                    background: $generalYellow;
-                    border: none;
+                .btn {
                     font: {
                         family: 'Poppins', sans-serif;
                         size: 16px;
+                    }
+
+                    background: $generalYellow;
+
+                    @extend .btn-temp;
+                    @extend .btn-before;
+
+                    &:hover {
+                        p {color: $light; z-index: 2;}
+                        @extend .pointer;
                     }
                 }
             }
