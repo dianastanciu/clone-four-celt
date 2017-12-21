@@ -32,4 +32,11 @@ $(document).ready(function() {
         $(".blg > .hidden-drop-menu").removeClass("showHiddenMenu").addClass("showHiddenMenuR");
     });
 
+    $(".src i").on("mouseenter", function() {
+        $(".src-input").css("opacity","1");
+    });
+
+    $(".src").on("mouseleave", function() {
+        $(".src-input").css("opacity","0");
+    });
 });

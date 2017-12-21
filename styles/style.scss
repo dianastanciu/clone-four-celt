@@ -24,6 +24,7 @@ html {
   $_black: #000000;
   $_mastrichBlue: #001232;
   $_isabelline: #EEEEEE;
+  $_darkBlueGrey: #64728A;
 
   //for production
   $light: $_white;
@@ -32,6 +33,7 @@ html {
   $topBarBgColor: $_mastrichBlue;
   $hiddenMenuBorderColor: $_isabelline;
   $navColor: $_mastrichBlue;
+  $searchColor: $_darkBlueGrey;
   
   //************************** VARIABLES END **************************//
 
@@ -173,9 +175,7 @@ html {
         display: flex;
         align-items: center;
             
-            img {
-                height: 40px;
-            }
+            img { height: 40px; }
         }
 
         .logo, .items {
@@ -222,11 +222,8 @@ html {
                 }
 
             }
-
-            .src { i {font-size: 17px;} }
-
+            
             //with dropdown menu
-
             .hom, .proj, .serv, .blg {
                 position: relative;
                 
@@ -237,18 +234,55 @@ html {
                     border: 1px solid $hiddenMenuBorderColor;
                     top: 83%;
                     opacity: 0;
-
+                    
                     .item {
                         color: $navColor;
                         border: 1px solid $hiddenMenuBorderColor;
                         padding: 10px;
                         font-weight: 300;
                         transition: all .2s ease;
-
+                        
                         &:hover {
                             border-left: 4px solid $generalYellow;
                             @extend .pointer;
                         }
+                    }
+                }
+            }
+            .src { 
+                position: relative;
+                padding: 22px 0;
+
+                i {
+                    font-size: 17px;
+                    padding: 22px 0;
+                } 
+
+                &:hover {@extend .pointer;}
+
+                .src-input {
+                    position: absolute;
+                    border: 1px solid $hiddenMenuBorderColor;
+                    top: 77%;
+                    right: -50%;
+                    padding: 10px;
+                    width: 250px; height: 70px;
+                    background: $light;
+                    opacity: 0;
+
+                    input {
+                        width: 100%;
+                        height: 90%;
+                        border: 1px solid $navColor;
+                        padding: 0 10px;
+
+                        font: {
+                            size: 17px;
+                            family: 'Poppins', sans-serif;
+                            weight: 300;
+                        }
+
+                        color: $searchColor;
                     }
                 }
             }
