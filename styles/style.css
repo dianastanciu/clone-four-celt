@@ -14,6 +14,108 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.hover-state-origin, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before {
+  animation: hoverStateOrigin .2s forwards;
+}
+
+@keyframes hoverStateOrigin {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+.hover-state, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before {
+  animation: hoverState .2s forwards;
+}
+
+@keyframes hoverState {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  margin: 0 7.5%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar-container {
+  width: 100%;
+  height: 65px;
+  background: #001232;
+}
+
+.top-bar-container .container {
+  height: 100%;
+  color: #ffffff;
+  justify-content: flex-end;
+}
+
+.top-bar-container .container .adr, .top-bar-container .container .tel, .top-bar-container .container .em {
+  display: flex;
+  align-items: baseline;
+  padding: 0 10px;
+}
+
+.top-bar-container .container .adr i, .top-bar-container .container .tel i, .top-bar-container .container .em i {
+  padding: 10px 12px;
+  border: 2px solid #ffd626;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffd626;
+  font-size: 14px;
+  transition: all .2s ease;
+}
+
+.top-bar-container .container .adr p, .top-bar-container .container .tel p, .top-bar-container .container .em p {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  z-index: 99;
+}
+
+.top-bar-container .container .adr p a, .top-bar-container .container .tel p a, .top-bar-container .container .em p a {
+  color: #ffffff;
+}
+
+.top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before {
+  content: "";
+  width: 103%;
+  height: 100%;
+  background: #ffd626;
+  position: absolute;
+  transform-origin: bottom;
+  z-index: -1;
+}
+
+.top-bar-container .container .adr:hover i, .top-bar-container .container .tel:hover i, .top-bar-container .container .em:hover i {
+  background: #ffd626;
+  color: #000000;
+}
+
+.top-bar-container .container .adr:hover p, .top-bar-container .container .tel:hover p, .top-bar-container .container .em:hover p {
+  color: #000000;
+}
+
+.top-bar-container .container .adr:hover p a, .top-bar-container .container .tel:hover p a, .top-bar-container .container .em:hover p a {
+  color: #000000;
+}
  
 
  /*# sourceMappingURL= style.css.map */
