@@ -23,12 +23,15 @@ html {
   $_white: #ffffff;
   $_black: #000000;
   $_mastrichBlue: #001232;
+  $_isabelline: #EEEEEE;
 
   //for production
   $light: $_white;
   $dark: $_black;
   $generalYellow: $_sunglow;
-  $navBgColor: $_mastrichBlue;
+  $topBarBgColor: $_mastrichBlue;
+  $hiddenMenuBorderColor: $_isabelline;
+  $navColor: $_mastrichBlue;
   
   //************************** VARIABLES END **************************//
 
@@ -82,13 +85,31 @@ html {
 
   a {text-decoration: none;}
 
+  .showHiddenMenu {
+    animation: showHiddenMenu .5s forwards;
+
+    @keyframes showHiddenMenu {
+        0% {transform: translateX(-20px); opacity: 0;}
+        100% {transform: translateX(0px); opacity: 1;}
+    }
+  }
+
+
+  .showHiddenMenuR{
+    animation: showHiddenMenuR .5s forwards;
+
+    @keyframes showHiddenMenuR {
+        0% {transform: translateX(0px); opacity: 1;}
+        100% {transform: translateX(-20px); opacity: 0;}
+    }
+  }
   //************************** GENERAL END **************************//
 
   //************************** TOP BAR START **************************//
   .top-bar-container {
       width: 100%; height: 65px;
     //   border: 1px dotted red; //temp
-      background: $navBgColor;
+      background: $topBarBgColor;
 
       .container {
         color: $light;
@@ -165,6 +186,7 @@ html {
         .items {
             justify-content: space-around;
             align-items: center;
+            color: $navColor;
 
             .hom, .abt, .proj, .serv, .blg, .cntc, .src {
                 display: flex;
@@ -174,8 +196,24 @@ html {
                     font-weight: 300;
                     position: relative;
                     z-index: 1;
+                    padding: 16px 0;
 
                     @extend .before-p;
+                   
+                    &:before { height: 45%; }
+
+                    &:hover {
+                        color: $dark;
+
+                        @extend .pointer;
+        
+                        &:before { 
+                            @extend .hover-state; 
+                            height: 45%;
+                        }
+    
+                        a {color: $dark;}
+                    }
                 }
 
                 i {
@@ -183,23 +221,39 @@ html {
                     margin-left: 5px;
                 }
 
-                &:hover {
-                    @extend .pointer;
-    
-                    p {
-                        &:before { @extend .hover-state; }
-                        color: $dark;
-    
-                        a {color: $dark;}
+            }
+
+            .src { i {font-size: 17px;} }
+
+            //with dropdown menu
+
+            .hom, .proj, .serv, .blg {
+                position: relative;
+                
+                .hidden-drop-menu {
+                    width: 250px; height: auto;
+                    background: $light;
+                    position: absolute;
+                    border: 1px solid $hiddenMenuBorderColor;
+                    top: 83%;
+                    opacity: 0;
+
+                    .item {
+                        color: $navColor;
+                        border: 1px solid $hiddenMenuBorderColor;
+                        padding: 10px;
+                        font-weight: 300;
+                        transition: all .2s ease;
+
+                        &:hover {
+                            border-left: 4px solid $generalYellow;
+                            @extend .pointer;
+                        }
                     }
                 }
             }
-
-            .src {
-                i {font-size: 17px;}
-            }
         }
-      }
+    }
   }
 
   //************************** NAVIGATION END **************************//

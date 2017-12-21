@@ -28,7 +28,7 @@ body {
   }
 }
 
-.hover-state, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom:hover p:before, nav .container .items .abt:hover p:before, nav .container .items .proj:hover p:before, nav .container .items .serv:hover p:before, nav .container .items .blg:hover p:before, nav .container .items .cntc:hover p:before, nav .container .items .src:hover p:before {
+.hover-state, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before {
   animation: hoverState .2s forwards;
 }
 
@@ -41,7 +41,7 @@ body {
   }
 }
 
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom:hover, nav .container .items .abt:hover, nav .container .items .proj:hover, nav .container .items .serv:hover, nav .container .items .blg:hover, nav .container .items .cntc:hover, nav .container .items .src:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover {
   cursor: pointer;
 }
 
@@ -64,6 +64,36 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.showHiddenMenu {
+  animation: showHiddenMenu .5s forwards;
+}
+
+@keyframes showHiddenMenu {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.showHiddenMenuR {
+  animation: showHiddenMenuR .5s forwards;
+}
+
+@keyframes showHiddenMenuR {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
 }
 
 .top-bar-container {
@@ -140,6 +170,7 @@ nav .container .logo, nav .container .items {
 nav .container .items {
   justify-content: space-around;
   align-items: center;
+  color: #001232;
 }
 
 nav .container .items .hom, nav .container .items .abt, nav .container .items .proj, nav .container .items .serv, nav .container .items .blg, nav .container .items .cntc, nav .container .items .src {
@@ -151,6 +182,23 @@ nav .container .items .hom p, nav .container .items .abt p, nav .container .item
   font-weight: 300;
   position: relative;
   z-index: 1;
+  padding: 16px 0;
+}
+
+nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before {
+  height: 45%;
+}
+
+nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover {
+  color: #000000;
+}
+
+nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before {
+  height: 45%;
+}
+
+nav .container .items .hom p:hover a, nav .container .items .abt p:hover a, nav .container .items .proj p:hover a, nav .container .items .serv p:hover a, nav .container .items .blg p:hover a, nav .container .items .cntc p:hover a, nav .container .items .src p:hover a {
+  color: #000000;
 }
 
 nav .container .items .hom i, nav .container .items .abt i, nav .container .items .proj i, nav .container .items .serv i, nav .container .items .blg i, nav .container .items .cntc i, nav .container .items .src i {
@@ -158,16 +206,34 @@ nav .container .items .hom i, nav .container .items .abt i, nav .container .item
   margin-left: 5px;
 }
 
-nav .container .items .hom:hover p, nav .container .items .abt:hover p, nav .container .items .proj:hover p, nav .container .items .serv:hover p, nav .container .items .blg:hover p, nav .container .items .cntc:hover p, nav .container .items .src:hover p {
-  color: #000000;
-}
-
-nav .container .items .hom:hover p a, nav .container .items .abt:hover p a, nav .container .items .proj:hover p a, nav .container .items .serv:hover p a, nav .container .items .blg:hover p a, nav .container .items .cntc:hover p a, nav .container .items .src:hover p a {
-  color: #000000;
-}
-
 nav .container .items .src i {
   font-size: 17px;
+}
+
+nav .container .items .hom, nav .container .items .proj, nav .container .items .serv, nav .container .items .blg {
+  position: relative;
+}
+
+nav .container .items .hom .hidden-drop-menu, nav .container .items .proj .hidden-drop-menu, nav .container .items .serv .hidden-drop-menu, nav .container .items .blg .hidden-drop-menu {
+  width: 250px;
+  height: auto;
+  background: #ffffff;
+  position: absolute;
+  border: 1px solid #EEEEEE;
+  top: 83%;
+  opacity: 0;
+}
+
+nav .container .items .hom .hidden-drop-menu .item, nav .container .items .proj .hidden-drop-menu .item, nav .container .items .serv .hidden-drop-menu .item, nav .container .items .blg .hidden-drop-menu .item {
+  color: #001232;
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  font-weight: 300;
+  transition: all .2s ease;
+}
+
+nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover {
+  border-left: 4px solid #ffd626;
 }
  
 
