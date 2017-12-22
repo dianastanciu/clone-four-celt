@@ -44,7 +44,6 @@ $(document).ready(function() {
     });
 
     //sticky nav
-
     var nav = $(".navigation");
 
     $(window).scroll(function() {
