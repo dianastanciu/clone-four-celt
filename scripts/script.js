@@ -64,4 +64,8 @@ $(document).ready(function() {
         $(".burger > .hidden-menu-burger").toggleClass("burger-hidden").addClass("show-burger-hidden");
     });
 
+    //search 
+    $(".search").on("click", function() {
+        $(".hidden-search").toggleClass("show-search");
+    });
 });
