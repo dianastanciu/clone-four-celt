@@ -1,0 +1,24 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    margin-left: 2%;
+  }
+  .top-bar-container {
+    height: auto;
+    padding: 10px 0;
+  }
+  .top-bar-container .container {
+    flex-direction: column;
+  }
+  .top-bar-container .container .adr, .top-bar-container .container .tel, .top-bar-container .container .em {
+    padding: 0;
+  }
+  nav {
+    top: 220px;
+  }
+  .header {
+    top: 220px;
+  }
+}
+ 
+
+ /*# sourceMappingURL= responsive.css.map */
