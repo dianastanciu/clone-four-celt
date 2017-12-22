@@ -62,7 +62,7 @@
     right: -51px;
     top: 49px;
     transform-origin: top;
-    border-top: 1px solid #EEEEEE;
+    border-top: 1px solid #eee;
     transform: scale(0);
   }
   nav .container .menu-mobile .item-container .search .hidden-search input {
