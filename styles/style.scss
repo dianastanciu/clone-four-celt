@@ -76,8 +76,9 @@ html {
         background: $generalYellow;
         position: absolute;
         transform-origin: bottom;
-        @extend .hover-state-origin;
         z-index: -1;
+        
+        @extend .hover-state-origin;
     }
   }
 
@@ -95,9 +96,7 @@ html {
 
         @extend .hover-state-origin;
 
-        &:hover {
-            @extend .hover-state;
-        }
+        &:hover { @extend .hover-state; }
     }
   }
 
@@ -264,6 +263,9 @@ html {
       z-index: 9999;
 
       .container {
+
+        .menu-mobile {display: none;}
+
         .logo {
         display: flex;
         align-items: center;
@@ -562,5 +564,3 @@ html {
 }
 
 //************************** ABOUT END **************************//
-
-      

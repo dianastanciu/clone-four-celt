@@ -221,6 +221,10 @@ nav {
   z-index: 9999;
 }
 
+nav .container .menu-mobile {
+  display: none;
+}
+
 nav .container .logo {
   display: flex;
   align-items: center;
@@ -491,6 +495,4 @@ nav .container .items .src .src-input input {
 .about .text .subtitle, .about .text .title, .about .text .description-big, .about .text .description-small {
   margin: 10px 0;
 }
- 
-
- /*# sourceMappingURL= style.css.map */
+/*# sourceMappingURL=style.css.map */

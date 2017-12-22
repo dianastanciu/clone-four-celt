@@ -44,7 +44,6 @@ $(document).ready(function() {
     });
 
     //sticky nav
-
     var nav = $(".navigation");
 
     $(window).scroll(function() {
@@ -53,5 +52,19 @@ $(document).ready(function() {
         } else {
             nav.removeClass("nav-scrolled");
         }
+    });
+
+
+    //burger menu
+    $(".burger").on("click", function() {
+        $(".burger > .container > .one").toggleClass("move-one-r").toggleClass("move-one");
+        $(".burger > .container > .two").toggleClass("move-two-r").toggleClass("move-two");
+        $(".burger > .container > .three").toggleClass("move-three-r").toggleClass("move-three");
+        $(".burger > .hidden-menu-burger").toggleClass("burger-hidden").addClass("show-burger-hidden");
+    });
+
+    //search 
+    $(".search").on("click", function() {
+        $(".hidden-search").toggleClass("show-search");
     });
 });
