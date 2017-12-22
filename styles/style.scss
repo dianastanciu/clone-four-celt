@@ -17,33 +17,6 @@ html {
   
   //************************** BASIC END **************************//
 
-  //************************** VARIABLES START **************************//
-  //not for production
-  $_sunglow: #ffd626;
-  $_white: #ffffff;
-  $_black: #000000;
-  $_mastrichBlue: #001232;
-  $_lightMastrichBlue: #000044;
-  $_isabelline: #EEEEEE;
-  $_darkBlueGrey: #64728A;
-  $_ghostWhite: #F8F8F8;
-
-  //for production
-  $light: $_white;
-  $dark: $_black;
-  $generalYellow: $_sunglow;
-  $topBarBgColor: $_mastrichBlue;
-  $hiddenMenuBorderColor: $_isabelline;
-  $navColor: $_lightMastrichBlue;
-  $searchColor: $_darkBlueGrey;
-  $textColor: $_darkBlueGrey;
-  $titleColor: $_lightMastrichBlue;
-  $buttonColor: $_mastrichBlue;
-  $aboutBgColor: $_ghostWhite;
-  $descLgColor: $_darkBlueGrey;
-
-  //************************** VARIABLES END **************************//
-
   //************************** EXTEND START **************************//
   //item after hover
   .hover-state-origin {
@@ -263,6 +236,8 @@ html {
       z-index: 9999;
 
       .container {
+
+        .menu-mobile {display: none;}
         .logo {
         display: flex;
         align-items: center;
