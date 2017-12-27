@@ -367,6 +367,35 @@ nav {
     .about .text .subtitle, .about .text .title, .about .text .description-big, .about .text .description-small {
       margin: 10px 0; }
 
+.skills {
+  height: 204px;
+  background: #ffd626;
+  margin-bottom: 200px; }
+  .skills .container {
+    display: flex; }
+    .skills .container .item {
+      display: flex;
+      flex: 1; }
+      .skills .container .item .icon, .skills .container .item .text {
+        display: flex;
+        flex: 1;
+        color: #000044; }
+      .skills .container .item .text {
+        flex-direction: column;
+        flex: 2; }
+        .skills .container .item .text .title, .skills .container .item .text .subtitle {
+          display: flex;
+          flex: 1; }
+        .skills .container .item .text .title {
+          align-items: flex-end;
+          font-size: 28px;
+          font-weight: 700; }
+      .skills .container .item .icon {
+        justify-content: center;
+        align-items: center; }
+        .skills .container .item .icon i {
+          font-size: 35px; }
+
 /*i know the import statement should be placed at the beginning of the scss 
 file, but for whatever reason it is not working on my OS, so I will leave
 it here for the time being*/
