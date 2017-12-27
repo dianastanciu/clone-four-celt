@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 
     //burger menu
-    $(".burger").on("click", function() {
+    $(".burger > .container").on("click", function() {
         $(".burger > .container > .one").toggleClass("move-one-r").toggleClass("move-one");
         $(".burger > .container > .two").toggleClass("move-two-r").toggleClass("move-two");
         $(".burger > .container > .three").toggleClass("move-three-r").toggleClass("move-three");
@@ -66,5 +66,32 @@ $(document).ready(function() {
     //search 
     $(".search").on("click", function() {
         $(".hidden-search").toggleClass("show-search");
+    });
+
+
+    //burger hidden menu 
+    $(".burger > .hidden-menu-burger > .hom ").on("click", function() {
+        $(".burger > .hidden-menu-burger > .hom > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
+        $(".abt").toggleClass("move-home");
+        $(".burger > .hidden-menu-burger > .hom > .fa-plus").toggleClass("hide-plus");
+    });
+
+    $(".burger > .hidden-menu-burger > .proj ").on("click", function() {
+        $(".burger > .hidden-menu-burger > .proj > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
+        $(".serv").toggleClass("move-proj");
+        $(".burger > .hidden-menu-burger > .proj > .fa-plus").toggleClass("hide-plus");
+    });
+
+    $(".burger > .hidden-menu-burger > .serv ").on("click", function() {
+        $(".burger > .hidden-menu-burger > .serv > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
+        $(".blg").toggleClass("move-serv");
+        $(".burger > .hidden-menu-burger > .serv > .fa-plus").toggleClass("hide-plus");
+    });
+
+
+    $(".burger > .hidden-menu-burger > .blg ").on("click", function() {
+        $(".burger > .hidden-menu-burger > .blg > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
+        $(".cntc").toggleClass("move-blg");
+        $(".burger > .hidden-menu-burger > .blg > .fa-plus").toggleClass("hide-plus");
     });
 });

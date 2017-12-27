@@ -1,5 +1,3 @@
-@import 'responsive';
-
 //************************** VARIABLES START **************************//
 //not for production
 $_sunglow: #ffd626;
@@ -155,6 +153,9 @@ html {
         line-height: 29px;
         color: $descLgColor;
     }
+
+
+
   //************************** EXTEND END **************************//
 
 
@@ -190,6 +191,26 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+
+
+  .showHiddenMenu-mobile {
+    animation: showHiddenMenu-mobile .1s forwards;
+
+    @keyframes showHiddenMenu-mobile {
+        0% {transform: scaleY(0);}
+        100% {transform:  scaleY(1);}
+    }
+  }
+
+  .showHiddenMenuR-mobile {
+    animation: showHiddenMenuR-mobile .01s forwards;
+
+    @keyframes showHiddenMenuR-mobile {
+        0% {transform:  scaleY(1);}
+        100% {transform:  scaleY(0);}
+    }
   }
   //************************** GENERAL END **************************//
 
@@ -568,3 +589,7 @@ html {
 
 //************************** ABOUT END **************************//
 
+/*i know the import statement should be placed at the beginning of the scss 
+file, but for whatever reason it is not working on my OS, so I will leave
+it here for the time being*/
+@import 'responsive';

@@ -110,7 +110,7 @@
                             top: 49px;
                             transform-origin: top;
                             transform: scale(0);
-                            
+
 
                             .hom, .abt, .proj, .serv, .blg, .cntc, .src {
                                 border: 1px solid #eee;
@@ -125,6 +125,21 @@
                                     right: 20px;
                                     font-size: 10px;
                                 }            
+                            }
+
+                            .hom , .proj , .serv,  .blg {@extend .mobile-dropdown-menu;}
+
+                            .hom {
+                                .hidden-drop-menu {top: 138%;}
+                            }
+                            .proj {
+                                .hidden-drop-menu {top: 102%;}
+                            }
+                            .serv {
+                                .hidden-drop-menu {top: 262%;}
+                            }
+                            .blg {
+                                .hidden-drop-menu {top: 102%;}
                             }
                         }
                     }
@@ -200,5 +215,37 @@
     @keyframes show-search {
         0% {transform: scaleY(0)}
         100% {transform: scaleY(1)}
+    }
+
+    .move-home {margin-top: 141px;}
+    .move-proj {margin-top: 100px;}
+    .move-serv {margin-top: 284px;}
+    .move-blg {margin-top: 101px;}
+
+    .hide-plus {opacity: 0;}
+
+
+
+    //when clicked on the plus button in mobile view
+    .mobile-dropdown-menu {
+        position: relative;
+
+        .hidden-drop-menu {
+            background: #fff;
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transform-origin: top;
+
+            .item {
+                border: 1px solid $hiddenMenuBorderColor;
+                width: 100%;
+                padding: 10px;
+                margin-left: -19px;
+            }
+        }
     }
 }
