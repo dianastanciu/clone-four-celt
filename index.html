@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Basic Styles-->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <!--Responsive Styles-->
+    <!-- <link rel="stylesheet" href="./styles/responsive.css"> -->
+    
     <!--Font Awesome-->
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Google Font: Poppins -->
@@ -14,6 +17,222 @@
 </head>
 <body>
     
+    <!--TOP BAR START-->
+    <div class="top-bar-container">
+        <div class="container">
+            <div class="adr">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>1673 Marietta Street</p>
+            </div>
+            <div class="tel">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p><a href="tel:120 876 45785">120 876 45785</a></p>
+            </div>
+            <div class="em">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p><a href="mailto:company@email.com">company@email.com</a></p>
+            </div>
+        </div>
+    </div>
+    <!--TOP BAR END-->
+
+    <!--NAVIGATION START-->
+    <nav class="navigation">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <div class="items">
+                <div class="hom">
+                    <p>Home</p>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+                    <div class="hidden-drop-menu showHiddenMenuR">
+                        <div class="item">Home Version 1</div>
+                        <div class="item">Home Version 2</div>
+                        <div class="item">Home Version 3</div>
+                    </div>
+                </div>
+                <div class="abt">
+                    <p>About</p>
+                </div>
+                <div class="proj">
+                    <p>Projects</p>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <div class="hidden-drop-menu showHiddenMenuR">
+                            <div class="item">Single Project</div>
+                            <div class="item">Project Detail</div>
+                    </div>
+                </div>
+                <div class="serv">
+                    <p>Services</p>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <div class="hidden-drop-menu showHiddenMenuR">
+                            <div class="item">Construction</div>
+                            <div class="item">Renovation</div>
+                            <div class="item">Architecture</div>
+                            <div class="item">Painting</div>
+                            <div class="item">Decorating</div>
+                            <div class="item">Consulting</div>
+                    </div>
+                </div>
+                <div class="blg">
+                    <p>Blog</p>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <div class="hidden-drop-menu showHiddenMenuR">
+                            <div class="item">Blog Page</div>
+                            <div class="item">Blog Post Page</div>
+                    </div>
+                </div>
+                <div class="cntc">
+                    <p>Contact</p>
+                </div>
+                <div class="src">
+                    <i class="fa fa-search" aria-hidden="true">
+                        <div class="src-input">
+                                <input type="search" placeholder="Search">
+                        </div>
+                    </i>
+                    
+                </div>
+            </div>
+
+            <div class="menu-mobile">
+                <div class="item-container">
+                    <div class="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <div class="hidden-search">
+                            <input type="search" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="burger">
+                        <div class="container">
+                            <div class="span one move-one-r"></div>
+                            <div class="span two move-two-r"></div>
+                            <div class="span three move-three-r"></div>
+                        </div>
+
+                        <div class="hidden-menu-burger burger-hidden">
+                                <div class="hom">
+                                    <p>Home</p>
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    <div class="hidden-drop-menu showHiddenMenuR-mobile">
+                                        <div class="item">Home Version 01</div>
+                                        <div class="item">Home Version 02</div>
+                                        <div class="item">Home Version 03</div>
+                                    </div>
+                                </div>
+                                <div class="abt">
+                                    <p>About</p>
+                                </div>
+                                <div class="proj">
+                                    <p>Projects</p>
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    <div class="hidden-drop-menu showHiddenMenuR-mobile">
+                                        <div class="item">Single Project</div>
+                                        <div class="item">Project Detail</div>
+                                </div>
+                                </div>
+                                <div class="serv">
+                                    <p>Services</p>
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    <div class="hidden-drop-menu showHiddenMenuR-mobile">
+                                        <div class="item">Construction</div>
+                                        <div class="item">Renovation</div>
+                                        <div class="item">Architecture</div>
+                                        <div class="item">Painting</div>
+                                        <div class="item">Decorating</div>
+                                        <div class="item">Consulting</div>
+                                    </div>
+                                </div>
+                                <div class="blg">
+                                    <p>Blog</p>
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                    <div class="hidden-drop-menu showHiddenMenuR-mobile">
+                                        <div class="item">Blog Page</div>
+                                        <div class="item">Blog Post Page</div>
+                                    </div>
+                                </div>
+                                <div class="cntc">
+                                    <p>Contact</p>
+                                </div>
+                                <div class="src"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--NAVIGATION END-->
+
+    <!--HEADER END-->
+    <div class="header">
+        <div class="container">
+            <div class="title-container">
+                <div class="title">Lorem Ipsum lorem</div>
+                <div class="description">Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</div>
+                <div class="btn"><p>Learn more</p></div>
+            </div>
+        </div>
+    </div>
+    <!--HEADER END-->
+
+    <!--FEATURES END-->
+    <div class="features">
+        <div class="container">
+            <div class="item">
+                <div class="image">
+                    <img src="./images/about1.jpg" alt="experience">
+                </div>
+                <div class="text">
+                    <div class="title">Vestibulum ante</div>
+                    <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</div>
+                    <p><a href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                        <img src="./images/about1.jpg" alt="experience">
+                    </div>
+                <div class="text">
+                    <div class="title">Vestibulum ante</div>
+                    <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</div>
+                    <p><a href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                        <img src="./images/about1.jpg" alt="experience">
+                    </div>
+                <div class="text">
+                    <div class="title">Vestibulum ante</div>
+                    <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</div>
+                    <p><a href="#">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FEATURES END-->
+    
+    <!-- ABOUT END-->
+    <div class="about">
+        <div class="image">
+            <img src="./images/about4.jpg" alt="about image">
+        </div>
+        <div class="text">
+            <div class="subtitle">Subtitle</div>
+            <div class="title">About Us</div>
+            <div class="description-big">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu</div>
+            <div class="description-small">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</div>
+        </div>
+    </div>
+
+    <!-- ABOUT END-->
+
     <!--jQuery-->
     <script src="./scripts/jquery-3.2.1.min.js"></script>
     <!--JavaScript-->

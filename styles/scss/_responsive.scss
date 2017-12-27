@@ -1,0 +1,292 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    
+    .container {
+        margin-left: 2%;
+    }
+    .top-bar-container {
+        z-index: 1;
+        height: 180px;
+        padding: 10px 0;
+        .container {
+            flex-direction: column;
+            
+
+            .adr, .tel, .em  {
+                padding: 0; 
+            }
+        }
+    }
+
+    nav {
+        top: 180px;
+        height: 50px;
+        position: relative;
+
+        .container {
+            .items {display: none;}
+            .menu-mobile {
+                display: block;
+                width: 100px; height: 100%;
+                position: absolute;
+                right: 0;
+                
+                .item-container {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+
+                    .search, .burger {
+                        display: flex; flex: 1;
+                        height: 100%;
+                        border: 1px solid #EEEEEE;
+                        &:hover {cursor:pointer;}
+                    }
+
+                    .search {
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        position: relative;
+                        i { font-size: 20px; }
+
+                        .hidden-search {
+                            width: 100vw; 
+                            height: 70px;
+                            background: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            right: -51px;
+                            top: 49px;
+                            transform-origin: top;
+                            border-top: 1px solid #eee;
+                            transform: scale(0);
+
+                            input {
+                                position: absolute;
+                                width: 92%;
+                                height: 55%;
+                                padding: 0 15px;
+
+                                &::placeholder {
+                                    color: rgb(109, 109, 109);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .burger {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        position: relative;
+
+                        .container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-around;
+                            height: 60%;
+                            
+                            .span {
+                                display: flex;
+                                width: 62%;
+                                height: 4px;
+                                background: #001232;
+                            }
+                        }
+
+                        .hidden-menu-burger {
+                            width: 100vw; 
+                            height: auto;
+                            background: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            right: 0px;
+                            top: 49px;
+                            transform-origin: top;
+                            transform: scale(0);
+
+                            .hom, .abt, .proj, .serv, .blg, .cntc, .src {
+                                border: 1px solid #eee;
+                                width: 100%;
+                                padding: 0 20px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                font-weight: 300;
+                                i {
+                                    position: absolute;
+                                    right: 20px;
+                                    font-size: 10px;
+                                }            
+                            }
+
+                            .hom , .proj , .serv,  .blg {@extend .mobile-dropdown-menu;}
+
+                            .hom {
+                                .hidden-drop-menu {top: 138%;}
+                            }
+                            .proj {
+                                .hidden-drop-menu {top: 102%;}
+                            }
+                            .serv {
+                                .hidden-drop-menu {top: 262%; }
+                            }
+                            .blg {
+                                .hidden-drop-menu {top: 102%;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        top: 190px;
+        padding-bottom: 150px;
+        .btn { margin-top: 20px; }
+    }
+
+    .move-one { animation: move-one .1s forwards; }
+
+    @keyframes move-one {
+        0% {transform: rotate(0deg) translate(0px, 0px)}
+        100% {transform: rotate(37deg) translate(8px, 8px)}
+    }
+
+    .move-one-r { animation: move-one-r .1s forwards; }
+
+    @keyframes move-one-r {
+        0% {transform: rotate(37deg) translate(8px, 8px)}
+        100% {transform: rotate(0deg) translate(0px, 0px)}
+    }
+
+
+    .move-two { animation: move-two .1s forwards; }
+
+    @keyframes move-two {
+        0% {transform: scale(1)}
+        100% {transform: scale(0)}
+    }
+
+    .move-two-r { animation: move-two-r .1s forwards; }
+
+    @keyframes move-two-r {
+        0% {transform: scale(0)}
+        100% {transform: scale(1)}
+    }
+
+    .move-three { animation: move-three .1s forwards; }
+
+    @keyframes move-three {
+        0% {transform: rotate(0deg) translate(0px, 0px)}
+        100% {transform: rotate(-40deg) translate(6px, -6px)}
+    }
+
+    .move-three-r { animation: move-three-r .1s forwards; }
+
+    @keyframes move-three-r {
+        0% {transform: rotate(-40deg) translate(6px, -6px)}
+        100% {transform: rotate(0deg) translate(0px, 0px)}
+    }
+
+
+    .show-burger-hidden { animation: show-burger-hidden .1s forwards; }
+
+    @keyframes show-burger-hidden {
+        0% {transform: scaleY(0)}
+        100% {transform: scaleY(1)}
+    }
+
+    .burger-hidden { animation: burger-hidden .1s forwards; }
+
+    @keyframes burger-hidden {
+        0% {transform: scaleY(1)}
+        100% {transform: scaleY(0)}
+    }
+
+    .show-search {animation: show-search .1s forwards;}
+
+    @keyframes show-search {
+        0% {transform: scaleY(0)}
+        100% {transform: scaleY(1)}
+    }
+
+    .move-home {margin-top: 141px;}
+    .move-proj {margin-top: 100px;}
+    .move-serv {margin-top: 284px;}
+    .move-blg {margin-top: 101px;}
+
+    .hide-plus {opacity: 0;}
+
+    //when clicked on the plus button in mobile view
+    .mobile-dropdown-menu {
+        position: relative;
+
+        .hidden-drop-menu {
+            background: #fff;
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transform-origin: top;
+
+            .item {
+                border: 1px solid $hiddenMenuBorderColor;
+                width: 95%;
+                padding: 10px;
+            }
+        }
+    }
+
+
+    .header { top: 180px; .container{z-index: 2;} }
+    .features {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        .container {
+            margin: 0;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .item {
+                margin-top: 30px;
+                padding: 0;
+            }
+        }
+    }
+
+
+    .about {
+        position: relative;
+        .text {
+            background: $aboutBgColor;
+            padding: 40px;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .image {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .container {
+        width: 90%;
+        margin: 0 5%;
+    }
+}

@@ -1,0 +1,595 @@
+//************************** VARIABLES START **************************//
+//not for production
+$_sunglow: #ffd626;
+$_white: #ffffff;
+$_black: #000000;
+$_mastrichBlue: #001232;
+$_lightMastrichBlue: #000044;
+$_isabelline: #EEEEEE;
+$_darkBlueGrey: #64728A;
+$_ghostWhite: #F8F8F8;
+
+//for production
+$light: $_white;
+$dark: $_black;
+$generalYellow: $_sunglow;
+$topBarBgColor: $_mastrichBlue;
+$hiddenMenuBorderColor: $_isabelline;
+$navColor: $_lightMastrichBlue;
+$searchColor: $_darkBlueGrey;
+$textColor: $_darkBlueGrey;
+$titleColor: $_lightMastrichBlue;
+$buttonColor: $_mastrichBlue;
+$aboutBgColor: $_ghostWhite;
+$descLgColor: $_darkBlueGrey;
+
+//************************** VARIABLES END **************************//
+
+//************************** BASIC START **************************//
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  //************************** BASIC END **************************//
+
+
+  //************************** EXTEND START **************************//
+  //item after hover
+  .hover-state-origin {
+      animation: hoverStateOrigin .2s forwards;
+
+      @keyframes hoverStateOrigin {
+          0% {transform: scaleY(1);}
+          100% {transform: scaleY(0)}
+      }
+  }
+
+  //item:hover
+  .hover-state {
+      animation: hoverState .2s forwards;
+
+      @keyframes hoverState {
+          0% {transform: scaleY(0)}
+          100% {transform: scaleY(1);}
+      }
+  }
+
+  //item:hover - pointer
+  .pointer {cursor: pointer;}
+
+  //p:before
+  .before-p {
+    &:before {
+        content: "";
+        width: 103%; height: 100%;
+        background: $generalYellow;
+        position: absolute;
+        transform-origin: bottom;
+        z-index: -1;
+        
+        @extend .hover-state-origin;
+    }
+  }
+
+
+  //btn:before + hover
+  .btn-before {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%; height: 100%;
+        background: $buttonColor;
+        top: 0; left: 0;
+        transform-origin: bottom;
+        z-index: 1;
+
+        @extend .hover-state-origin;
+
+        &:hover { @extend .hover-state; }
+    }
+  }
+
+  //button template
+  .btn-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; height: 46px;
+    background: $generalYellow;
+    border: none;
+    position: relative;
+  }
+
+  //general subtitle {
+    .subtitle-gen {
+        font: {
+            size: 16px;
+            weight: 700;
+        }
+        color: $textColor;
+    }
+
+    //general title {
+    .title-gen {
+        font: {
+            size: 28px;
+            weight: 700;
+        }
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border-left: 15px solid $generalYellow;
+    }
+
+    //general description text . large
+    .desc-lg-gen {
+        font: {
+            size: 21px;
+            weight: 300;
+        }
+        line-height: 29px;
+        color: $descLgColor;
+    }
+
+    //general description text . small
+    .desc-sm-gen {
+        font: {
+            size: 16px;
+            weight: 300;
+        }
+        line-height: 29px;
+        color: $descLgColor;
+    }
+
+
+
+  //************************** EXTEND END **************************//
+
+
+  //************************** GENERAL START **************************//
+  .container {
+      width: 85%; height: 100%;
+      margin: 0 7.5%;
+    //   border: 1px dotted $dark; //temp
+      display: flex;
+  }
+
+  a {text-decoration: none;}
+
+  .showHiddenMenu {
+    animation: showHiddenMenu .5s forwards;
+
+    @keyframes showHiddenMenu {
+        0% {transform: translateX(-20px); opacity: 0;}
+        100% {transform: translateX(0px); opacity: 1;}
+    }
+  }
+
+  .showHiddenMenuR{
+    animation: showHiddenMenuR .5s forwards;
+
+    @keyframes showHiddenMenuR {
+        0% {transform: translateX(0px); opacity: 1;}
+        100% {transform: translateX(-20px); opacity: 0;}
+    }
+  }
+
+  .nav-scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+
+  .showHiddenMenu-mobile {
+    animation: showHiddenMenu-mobile .1s forwards;
+
+    @keyframes showHiddenMenu-mobile {
+        0% {transform: scaleY(0);}
+        100% {transform:  scaleY(1);}
+    }
+  }
+
+  .showHiddenMenuR-mobile {
+    animation: showHiddenMenuR-mobile .01s forwards;
+
+    @keyframes showHiddenMenuR-mobile {
+        0% {transform:  scaleY(1);}
+        100% {transform:  scaleY(0);}
+    }
+  }
+  //************************** GENERAL END **************************//
+
+  //************************** TOP BAR START **************************//
+  .top-bar-container {
+      position: fixed;
+      width: 100%; height: 65px;
+    //   border: 1px dotted red; //temp
+      background: $topBarBgColor;
+
+      .container {
+        color: $light;
+        justify-content: flex-end;
+
+        .adr, .tel, .em {
+            display: flex;
+            align-items: baseline;
+            padding: 0 10px;
+
+            i {
+                padding: 10px 12px;
+                width: 35px; height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $generalYellow;
+                border-radius: 50%;
+                margin-right: 10px;
+                color: $generalYellow;
+                font-size: 14px;
+                transition: all .2s ease;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                position: relative;
+                z-index: 1;
+               
+                a {color: $light;}
+
+                @extend .before-p;
+            }
+
+            &:hover {
+                @extend .pointer;
+
+                i {
+                    background: $generalYellow;
+                    color: $dark;
+                }
+
+                p {
+                    color: $dark;
+                    
+                    &:before { @extend .hover-state; }
+                    
+                    a {color: $dark;}
+                }
+            }
+        }
+      }
+  }
+  //************************** TOP BAR END **************************//
+
+
+  //************************** NAVIGATION START **************************//
+  nav {
+      height: 60px;
+      background: $light;
+      position: absolute;
+      width: 100%;
+      top: 65px;
+      z-index: 9999;
+
+      .container {
+
+        .menu-mobile {display: none;}
+
+        .logo {
+        display: flex;
+        align-items: center;
+            
+            img { height: 40px; }
+        }
+
+        .logo, .items {
+            display: flex; flex: 1;
+        }
+
+        .items {
+            justify-content: space-around;
+            align-items: center;
+            color: $navColor;
+
+            .hom, .abt, .proj, .serv, .blg, .cntc, .src {
+                display: flex;
+                align-items: baseline;
+
+                p {
+                    font-weight: 300;
+                    position: relative;
+                    z-index: 1;
+                    padding: 16px 0;
+
+                    @extend .before-p;
+                   
+                    &:before { height: 45%; }
+
+                    &:hover {
+                        color: $dark;
+
+                        @extend .pointer;
+        
+                        &:before { 
+                            @extend .hover-state; 
+                            height: 45%;
+                        }
+    
+                        a {color: $dark;}
+                    }
+                }
+
+                i {
+                    font-size: 10px;
+                    margin-left: 5px;
+                }
+
+            }
+            
+            //with dropdown menu
+            .hom, .proj, .serv, .blg {
+                position: relative;
+                
+                .hidden-drop-menu {
+                    width: 250px; height: auto;
+                    background: $light;
+                    position: absolute;
+                    border: 1px solid $hiddenMenuBorderColor;
+                    top: 83%;
+                    opacity: 0;
+                    
+                    .item {
+                        color: $navColor;
+                        border: 1px solid $hiddenMenuBorderColor;
+                        padding: 10px;
+                        font-weight: 300;
+                        transition: all .2s ease;
+                        
+                        &:hover {
+                            border-left: 4px solid $generalYellow;
+                            @extend .pointer;
+                        }
+                    }
+                }
+            }
+
+            .blg {
+                .hidden-drop-menu {
+                    z-index: 2;
+                }
+            }
+            
+            .src { 
+                position: relative;
+                padding: 22px 0;
+
+                i {
+                    font-size: 17px;
+                    padding: 22px 10px;
+                } 
+
+                &:hover {@extend .pointer;}
+
+                .src-input {
+                    position: absolute;
+                    border: 1px solid $hiddenMenuBorderColor;
+                    top: 77%;
+                    right: -50%;
+                    padding: 10px;
+                    width: 250px; height: 70px;
+                    background: $light;
+                    display: none;
+
+                    input {
+                        width: 100%;
+                        height: 90%;
+                        border: 1px solid $navColor;
+                        padding: 0 10px;
+
+                        font: {
+                            size: 17px;
+                            family: 'Poppins', sans-serif;
+                            weight: 300;
+                        }
+
+                        color: $searchColor;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+ //************************** NAVIGATION END **************************//
+
+ //************************** HEADER START **************************//
+    .header {
+        height: 100vh;
+        background: #fff;
+        top: 70px;
+        position: relative;
+        background: url("../../images/background1.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        
+        &:before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .9;
+            background: $light;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .container {
+            align-items: center;
+            justify-content: center;
+            
+            .title-container {
+                z-index: 999;
+                display: flex;
+                flex-direction: column;
+                width: 80%; height: 250px;
+                margin: 0 10%;
+                justify-content: space-around;
+
+                .title {
+                    font: {
+                        size: 35px;
+                        weight: 700;
+                    }
+                    color: $titleColor;
+                }
+
+                .description {
+                    font: {
+                        size: 21px;
+                        weight: 300;
+                    }
+
+                    color: $textColor;
+                }
+
+                .btn {
+                    font: {
+                        family: 'Poppins', sans-serif;
+                        size: 16px;
+                    }
+
+                    background: $generalYellow;
+
+                    @extend .btn-temp;
+                    @extend .btn-before;
+
+                    &:hover {
+                        p {color: $light; z-index: 2;}
+                        @extend .pointer;
+                    }
+                }
+            }
+        }
+    }
+
+//************************** HEADER END **************************//
+
+//************************** FEATURES START **************************//
+
+.features {
+    height: auto;
+    background: #fff;
+    top: 70px;
+    position: relative;
+    .container {
+        flex-wrap: wrap;
+        .item {
+            margin-top: 100px;
+            display: flex;
+            flex: 1;
+            padding: 40px;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            .image, .text {display: flex; flex: 1;}
+
+            .image {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                border-bottom: 5px solid $generalYellow;
+            }
+
+            .text {
+                flex-direction: column;
+                padding: 20px 0;
+                justify-content: space-around;
+
+                .title {
+                    font-size: 20px;
+                    color: $titleColor;
+                }
+
+                .description {
+                    color: $textColor;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                    position: relative;
+                    z-index: 1;
+                    width: 50%;
+                   
+                    @extend .before-p;
+
+                    &:hover {
+                        color: $dark;
+
+                        @extend .pointer;
+        
+                        &:before { @extend .hover-state; }
+                    }
+
+                    a {color: $titleColor;}
+                }
+            }
+        }
+    }
+}
+//************************** FEATURES END **************************//
+
+//************************** ABOUT START **************************//
+
+.about {
+    width: 100%; height: auto;
+    display: flex;
+    background: $aboutBgColor;
+    margin-top: 70px;
+
+    .image, .text { display: flex; flex: 1; }
+
+    .image { 
+        flex: 2;
+        
+        img {max-width: 100%; height: 500px;} 
+    }
+
+    .text {
+        padding: 40px 40px 40px 0;
+        margin-left: -200px;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        .subtitle, .title, .description-big, .description-small { margin: 10px 0;}
+        .subtitle { @extend .subtitle-gen; }
+        .title { @extend .title-gen; }
+        .description-big { @extend .desc-lg-gen; }
+        .description-small { @extend .desc-sm-gen;}
+    }
+}
+
+//************************** ABOUT END **************************//
+
+/*i know the import statement should be placed at the beginning of the scss 
+file, but for whatever reason it is not working on my OS, so I will leave
+it here for the time being*/
+@import 'responsive';
