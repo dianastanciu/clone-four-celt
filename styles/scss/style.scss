@@ -595,10 +595,11 @@ html {
         height: auto;
         background: $generalYellow;
         margin-bottom: 200px;
+        padding: 60px 0;
 
         .container {
             display: flex;
-            width: 100%;
+            
 
             .item {
                 display: flex; flex: 1;
