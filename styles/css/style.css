@@ -375,6 +375,7 @@ it here for the time being*/
     margin-left: 2%; }
 
   .top-bar-container {
+    z-index: 1;
     height: 180px;
     padding: 10px 0; }
     .top-bar-container .container {
@@ -593,7 +594,7 @@ it here for the time being*/
         padding: 10px; }
 
   .header .container {
-    z-index: 1; }
+    z-index: 2; }
 
   .features {
     display: flex;
@@ -606,6 +607,16 @@ it here for the time being*/
       flex-direction: column; }
       .features .container .item {
         margin-top: 30px;
-        padding: 0; } }
+        padding: 0; }
+
+  .about {
+    position: relative; }
+    .about .text {
+      background: #F8F8F8;
+      padding: 40px;
+      z-index: 2;
+      margin: 0; }
+    .about .image {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
