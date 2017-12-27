@@ -1,10 +1,12 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    
     .container {
         margin-left: 2%;
     }
     .top-bar-container {
-        height: auto;
+        z-index: 1;
+        height: 180px;
         padding: 10px 0;
         .container {
             flex-direction: column;
@@ -17,7 +19,7 @@
     }
 
     nav {
-        top: 191px;
+        top: 180px;
         height: 50px;
         position: relative;
 
@@ -110,7 +112,6 @@
                             top: 49px;
                             transform-origin: top;
                             transform: scale(0);
-                            
 
                             .hom, .abt, .proj, .serv, .blg, .cntc, .src {
                                 border: 1px solid #eee;
@@ -126,6 +127,21 @@
                                     font-size: 10px;
                                 }            
                             }
+
+                            .hom , .proj , .serv,  .blg {@extend .mobile-dropdown-menu;}
+
+                            .hom {
+                                .hidden-drop-menu {top: 138%;}
+                            }
+                            .proj {
+                                .hidden-drop-menu {top: 102%;}
+                            }
+                            .serv {
+                                .hidden-drop-menu {top: 262%; }
+                            }
+                            .blg {
+                                .hidden-drop-menu {top: 102%;}
+                            }
                         }
                     }
                 }
@@ -135,6 +151,8 @@
 
     .header {
         top: 190px;
+        padding-bottom: 150px;
+        .btn { margin-top: 20px; }
     }
 
     .move-one { animation: move-one .1s forwards; }
@@ -200,5 +218,75 @@
     @keyframes show-search {
         0% {transform: scaleY(0)}
         100% {transform: scaleY(1)}
+    }
+
+    .move-home {margin-top: 141px;}
+    .move-proj {margin-top: 100px;}
+    .move-serv {margin-top: 284px;}
+    .move-blg {margin-top: 101px;}
+
+    .hide-plus {opacity: 0;}
+
+    //when clicked on the plus button in mobile view
+    .mobile-dropdown-menu {
+        position: relative;
+
+        .hidden-drop-menu {
+            background: #fff;
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transform-origin: top;
+
+            .item {
+                border: 1px solid $hiddenMenuBorderColor;
+                width: 95%;
+                padding: 10px;
+            }
+        }
+    }
+
+
+    .header { top: 180px; .container{z-index: 2;} }
+    .features {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        .container {
+            margin: 0;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .item {
+                margin-top: 30px;
+                padding: 0;
+            }
+        }
+    }
+
+
+    .about {
+        position: relative;
+        .text {
+            background: $aboutBgColor;
+            padding: 40px;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .image {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .container {
+        width: 90%;
+        margin: 0 5%;
     }
 }
