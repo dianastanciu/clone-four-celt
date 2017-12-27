@@ -150,6 +150,8 @@
 
     .header {
         top: 190px;
+        padding-bottom: 150px;
+        .btn { margin-top: 20px; }
     }
 
     .move-one { animation: move-one .1s forwards; }
@@ -240,9 +242,27 @@
 
             .item {
                 border: 1px solid $hiddenMenuBorderColor;
-                width: 100%;
+                width: 95%;
                 padding: 10px;
-                margin-left: -19px;
+            }
+        }
+    }
+
+
+    .header { .container{z-index: 1;} }
+    .features {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        .container {
+            margin: 0;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .item {
+                margin-top: 30px;
+                padding: 0;
             }
         }
     }
