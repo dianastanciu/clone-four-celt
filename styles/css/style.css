@@ -368,14 +368,16 @@ nav {
       margin: 10px 0; }
 
 .skills {
-  height: 204px;
+  height: auto;
   background: #ffd626;
   margin-bottom: 200px; }
   .skills .container {
-    display: flex; }
+    display: flex;
+    width: 100%; }
     .skills .container .item {
       display: flex;
-      flex: 1; }
+      flex: 1;
+      padding: 5px; }
       .skills .container .item .icon, .skills .container .item .text {
         display: flex;
         flex: 1;
@@ -649,6 +651,20 @@ it here for the time being*/
       margin: 0; }
     .about .image {
       display: none; } }
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  .skills {
+    padding: 20px; }
+    .skills .container {
+      flex-wrap: wrap; }
+      .skills .container .item {
+        min-width: 100%; } }
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .skills {
+    padding: 20px; }
+    .skills .container {
+      flex-wrap: wrap; }
+      .skills .container .item {
+        min-width: 50%; } }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .container {
     width: 90%;
