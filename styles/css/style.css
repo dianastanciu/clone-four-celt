@@ -384,7 +384,7 @@ it here for the time being*/
         padding: 0; }
 
   nav {
-    top: 191px;
+    top: 180px;
     height: 50px;
     position: relative; }
     nav .container .items {
@@ -593,8 +593,10 @@ it here for the time being*/
         width: 95%;
         padding: 10px; }
 
-  .header .container {
-    z-index: 2; }
+  .header {
+    top: 180px; }
+    .header .container {
+      z-index: 2; }
 
   .features {
     display: flex;

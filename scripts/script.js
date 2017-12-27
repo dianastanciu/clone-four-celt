@@ -52,16 +52,22 @@ $(document).ready(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop()>180) {
                 nav.addClass("nav-scrolled");
+                $(".top-bar-container").css("opacity", "0");
             } else {
                 nav.removeClass("nav-scrolled");
+                $(".top-bar-container").css("opacity", "1");
             }
         });
-    } else if (winWidth >= 768) {
+    }
+    
+    if (winWidth >= 768) {
         $(window).scroll(function() {
             if ($(this).scrollTop()>65) {
                 nav.addClass("nav-scrolled");
+                $(".top-bar-container").css("opacity", "0");
             } else {
                 nav.removeClass("nav-scrolled");
+                $(".top-bar-container").css("opacity", "1");
             }
         });
     }

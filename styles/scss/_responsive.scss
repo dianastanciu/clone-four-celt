@@ -19,7 +19,7 @@
     }
 
     nav {
-        top: 191px;
+        top: 180px;
         height: 50px;
         position: relative;
 
@@ -250,7 +250,7 @@
     }
 
 
-    .header { .container{z-index: 2;} }
+    .header { top: 180px; .container{z-index: 2;} }
     .features {
         display: flex;
         justify-content: center;
