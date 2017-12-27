@@ -1,10 +1,11 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    
     .container {
         margin-left: 2%;
     }
     .top-bar-container {
-        height: auto;
+        height: 180px;
         padding: 10px 0;
         .container {
             flex-direction: column;
@@ -111,7 +112,6 @@
                             transform-origin: top;
                             transform: scale(0);
 
-
                             .hom, .abt, .proj, .serv, .blg, .cntc, .src {
                                 border: 1px solid #eee;
                                 width: 100%;
@@ -136,7 +136,7 @@
                                 .hidden-drop-menu {top: 102%;}
                             }
                             .serv {
-                                .hidden-drop-menu {top: 262%;}
+                                .hidden-drop-menu {top: 262%; }
                             }
                             .blg {
                                 .hidden-drop-menu {top: 102%;}
@@ -223,8 +223,6 @@
     .move-blg {margin-top: 101px;}
 
     .hide-plus {opacity: 0;}
-
-
 
     //when clicked on the plus button in mobile view
     .mobile-dropdown-menu {

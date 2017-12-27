@@ -45,14 +45,26 @@ $(document).ready(function() {
 
     //sticky nav
     var nav = $(".navigation");
+    var winWidth = $(window).width();
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop()>65) {
-            nav.addClass("nav-scrolled");
-        } else {
-            nav.removeClass("nav-scrolled");
-        }
-    });
+    
+    if (winWidth <= 767) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>180) {
+                nav.addClass("nav-scrolled");
+            } else {
+                nav.removeClass("nav-scrolled");
+            }
+        });
+    } else if (winWidth >= 768) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>65) {
+                nav.addClass("nav-scrolled");
+            } else {
+                nav.removeClass("nav-scrolled");
+            }
+        });
+    }
 
 
     //burger menu
@@ -75,17 +87,18 @@ $(document).ready(function() {
         $(".abt").toggleClass("move-home");
         $(".burger > .hidden-menu-burger > .hom > .fa-plus").toggleClass("hide-plus");
     });
-
+    
     $(".burger > .hidden-menu-burger > .proj ").on("click", function() {
         $(".burger > .hidden-menu-burger > .proj > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
         $(".serv").toggleClass("move-proj");
         $(".burger > .hidden-menu-burger > .proj > .fa-plus").toggleClass("hide-plus");
     });
-
+    
     $(".burger > .hidden-menu-burger > .serv ").on("click", function() {
         $(".burger > .hidden-menu-burger > .serv > .hidden-drop-menu").toggleClass("showHiddenMenuR-mobile").toggleClass("showHiddenMenu-mobile");
         $(".blg").toggleClass("move-serv");
         $(".burger > .hidden-menu-burger > .serv > .fa-plus").toggleClass("hide-plus");
+        $("body").toggleClass("noScroll");
     });
 
 
