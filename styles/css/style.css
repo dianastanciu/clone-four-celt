@@ -370,10 +370,10 @@ nav {
 .skills {
   height: auto;
   background: #ffd626;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  padding: 60px 0; }
   .skills .container {
-    display: flex;
-    width: 100%; }
+    display: flex; }
     .skills .container .item {
       display: flex;
       flex: 1;
@@ -655,14 +655,16 @@ it here for the time being*/
   .skills {
     padding: 20px; }
     .skills .container {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      width: 100%; }
       .skills .container .item {
         min-width: 100%; } }
 @media screen and (min-width: 550px) and (max-width: 767px) {
   .skills {
     padding: 20px; }
     .skills .container {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      width: 100%; }
       .skills .container .item {
         min-width: 50%; } }
 @media screen and (min-width: 768px) and (max-width: 900px) {
