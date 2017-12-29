@@ -1,29 +1,7 @@
-//************************** VARIABLES START **************************//
-//not for production
-$_sunglow: #ffd626;
-$_white: #ffffff;
-$_black: #000000;
-$_mastrichBlue: #001232;
-$_lightMastrichBlue: #000044;
-$_isabelline: #EEEEEE;
-$_darkBlueGrey: #64728A;
-$_ghostWhite: #F8F8F8;
-
-//for production
-$light: $_white;
-$dark: $_black;
-$generalYellow: $_sunglow;
-$topBarBgColor: $_mastrichBlue;
-$hiddenMenuBorderColor: $_isabelline;
-$navColor: $_lightMastrichBlue;
-$searchColor: $_darkBlueGrey;
-$textColor: $_darkBlueGrey;
-$titleColor: $_lightMastrichBlue;
-$buttonColor: $_mastrichBlue;
-$aboutBgColor: $_ghostWhite;
-$descLgColor: $_darkBlueGrey;
-
-//************************** VARIABLES END **************************//
+//************************** IMPORT START **************************//
+@import "variables";
+@import "extend";
+//************************** IMPORT END **************************//
 
 //************************** BASIC START **************************//
 html {
@@ -42,124 +20,9 @@ html {
     padding: 0;
   }
   
-  //************************** BASIC END **************************//
+//************************** BASIC END **************************//
 
-
-  //************************** EXTEND START **************************//
-  //item after hover
-  .hover-state-origin {
-      animation: hoverStateOrigin .2s forwards;
-
-      @keyframes hoverStateOrigin {
-          0% {transform: scaleY(1);}
-          100% {transform: scaleY(0)}
-      }
-  }
-
-  //item:hover
-  .hover-state {
-      animation: hoverState .2s forwards;
-
-      @keyframes hoverState {
-          0% {transform: scaleY(0)}
-          100% {transform: scaleY(1);}
-      }
-  }
-
-  //item:hover - pointer
-  .pointer {cursor: pointer;}
-
-  //p:before
-  .before-p {
-    &:before {
-        content: "";
-        width: 103%; height: 100%;
-        background: $generalYellow;
-        position: absolute;
-        transform-origin: bottom;
-        z-index: -1;
-        
-        @extend .hover-state-origin;
-    }
-  }
-
-
-  //btn:before + hover
-  .btn-before {
-    &:before {
-        content: "";
-        position: absolute;
-        width: 100%; height: 100%;
-        background: $buttonColor;
-        top: 0; left: 0;
-        transform-origin: bottom;
-        z-index: 1;
-
-        @extend .hover-state-origin;
-
-        &:hover { @extend .hover-state; }
-    }
-  }
-
-  //button template
-  .btn-temp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px; height: 46px;
-    background: $generalYellow;
-    border: none;
-    position: relative;
-  }
-
-  //general subtitle {
-    .subtitle-gen {
-        font: {
-            size: 16px;
-            weight: 700;
-        }
-        color: $textColor;
-    }
-
-    //general title {
-    .title-gen {
-        font: {
-            size: 28px;
-            weight: 700;
-        }
-        height: 35px;
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-        border-left: 15px solid $generalYellow;
-    }
-
-    //general description text . large
-    .desc-lg-gen {
-        font: {
-            size: 21px;
-            weight: 300;
-        }
-        line-height: 29px;
-        color: $descLgColor;
-    }
-
-    //general description text . small
-    .desc-sm-gen {
-        font: {
-            size: 16px;
-            weight: 300;
-        }
-        line-height: 29px;
-        color: $descLgColor;
-    }
-
-
-
-  //************************** EXTEND END **************************//
-
-
-  //************************** GENERAL START **************************//
+//************************** GENERAL START **************************//
   .container {
       width: 85%; height: 100%;
       margin: 0 7.5%;
@@ -193,8 +56,6 @@ html {
     width: 100%;
   }
 
-
-
   .showHiddenMenu-mobile {
     animation: showHiddenMenu-mobile .1s forwards;
 
@@ -212,9 +73,9 @@ html {
         100% {transform:  scaleY(0);}
     }
   }
-  //************************** GENERAL END **************************//
+//************************** GENERAL END **************************//
 
-  //************************** TOP BAR START **************************//
+//************************** TOP BAR START **************************//
   .top-bar-container {
       position: fixed;
       width: 100%; height: 65px;
@@ -274,10 +135,9 @@ html {
         }
       }
   }
-  //************************** TOP BAR END **************************//
+//************************** TOP BAR END **************************//
 
-
-  //************************** NAVIGATION START **************************//
+//************************** NAVIGATION START **************************//
   nav {
       height: 60px;
       background: $light;
@@ -414,7 +274,6 @@ html {
         }
     }
   }
-
  //************************** NAVIGATION END **************************//
 
  //************************** HEADER START **************************//
@@ -487,11 +346,9 @@ html {
             }
         }
     }
-
 //************************** HEADER END **************************//
 
 //************************** FEATURES START **************************//
-
 .features {
     height: auto;
     background: #fff;
@@ -558,7 +415,6 @@ html {
 //************************** FEATURES END **************************//
 
 //************************** ABOUT START **************************//
-
 .about {
     width: 100%; height: auto;
     display: flex;
@@ -586,7 +442,6 @@ html {
         .description-small { @extend .desc-sm-gen;}
     }
 }
-
 //************************** ABOUT END **************************//
 
 /*i know the import statement should be placed at the beginning of the scss 
