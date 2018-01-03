@@ -320,10 +320,11 @@ nav {
       .features .container .item .image, .features .container .item .text {
         display: flex;
         flex: 1; }
-      .features .container .item .image img {
-        max-width: 100%;
-        height: auto;
-        border-bottom: 5px solid #ffd626; }
+      .features .container .item .image {
+        background: url(../../images/about1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px; }
       .features .container .item .text {
         flex-direction: column;
         padding: 20px 0;
@@ -335,10 +336,11 @@ nav {
           color: #64728A;
           font-size: 16px; }
         .features .container .item .text p {
+          white-space: nowrap;
           font-size: 16px;
           position: relative;
           z-index: 1;
-          width: 50%; }
+          width: 40%; }
           .features .container .item .text p:hover {
             color: #000000; }
           .features .container .item .text p a {
@@ -354,13 +356,15 @@ nav {
     display: flex;
     flex: 1; }
   .about .image {
-    flex: 2; }
+    flex: 2;
+    flex: 1;
+    background: url(../../images/about4.jpg);
+    background-size: cover; }
     .about .image img {
-      max-width: 100%;
-      height: 500px; }
+      display: none; }
   .about .text {
-    padding: 40px 40px 40px 0;
-    margin-left: -200px;
+    padding: 40px 60px 40px 0;
+    margin-left: 50px;
     flex-direction: column;
     justify-content: space-around; }
     .about .text .subtitle, .about .text .title, .about .text .description-big, .about .text .description-small {
@@ -627,5 +631,15 @@ it here for the time being*/
   .container {
     width: 90%;
     margin: 0 5%; } }
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+  .about .image {
+    display: block;
+    flex: 1;
+    background: url(../../images/about4.jpg);
+    background-size: cover; }
+    .about .image img {
+      display: none; }
+  .about .text {
+    margin-left: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
