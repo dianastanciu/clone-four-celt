@@ -449,6 +449,53 @@ html {
 }
 //************************** ABOUT END **************************//
 
+//************************** SKILLS START **************************//
+.skills {
+    height: auto;
+    background: $generalYellow;
+    margin-bottom: 200px;
+    padding: 60px 0;
+
+    .container {
+        display: flex;
+        
+
+        .item {
+            display: flex; flex: 1;
+            padding: 5px;
+
+            .icon, .text {
+                display: flex; flex: 1;
+                color: $iconColor;
+            }
+            .text {
+                flex-direction: column;
+                flex: 2; 
+
+                .title, .subtitle {
+                    display: flex; flex: 1;
+                }
+
+                .title {
+                   align-items: flex-end;
+                   font-size: 28px;
+                   font-weight: 700;
+                }
+            }
+
+            .icon {
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+//************************** SKILLS END **************************//
+
 /*i know the import statement should be placed at the beginning of the scss 
 file, but for whatever reason it is not working on my OS, so I will leave
 it here for the time being*/
