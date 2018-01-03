@@ -354,3 +354,35 @@
         }
     }
 }
+
+
+@media screen and (min-width: 901px) {
+    .services {
+        .items-container{
+            .item {
+                flex: 1 0 30%;
+            }
+        }
+    }   
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+    .services {
+        .items-container{
+            .item {
+                flex: 1 0 40%;
+            }
+        }
+    }   
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    .services {
+        .items-container{
+            .item {
+                flex: 1 0 100%;
+            }
+        }
+    }   
+}

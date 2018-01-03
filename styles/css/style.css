@@ -1,21 +1,21 @@
-.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before {
+.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
   0% {
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before, .services .services-items .items-container .item .text p:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
   0% {
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover {
   cursor: pointer; }
 
-.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before {
+.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before {
   content: "";
   width: 103%;
   height: 100%;
@@ -69,12 +69,12 @@
   .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p {
     color: #000000; }
 
-.subtitle-gen, .about .text .subtitle, .featured-works .text .subtitle {
+.subtitle-gen, .about .text .subtitle, .featured-works .text .subtitle, .services .text .subtitle {
   font-size: 16px;
   font-weight: 700;
   color: #64728A; }
 
-.title-gen, .about .text .title, .featured-works .text .title {
+.title-gen, .about .text .title, .featured-works .text .title, .services .text .title {
   font-size: 28px;
   font-weight: 700;
   height: 35px;
@@ -515,9 +515,58 @@ nav {
     color: #000000;
     z-index: 2; }
 
-/*i know the import statement should be placed at the beginning of the scss 
-file, but for whatever reason it is not working on my OS, so I will leave
-it here for the time being*/
+.services .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px; }
+.services .services-items {
+  width: 100%;
+  height: auto; }
+  .services .services-items .items-container {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap; }
+    .services .services-items .items-container .item {
+      display: flex;
+      width: 360px;
+      height: auto;
+      margin: 3px; }
+      .services .services-items .items-container .item:hover {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+      .services .services-items .items-container .item .icon, .services .services-items .items-container .item .text {
+        display: flex;
+        flex: 1;
+        height: 100%; }
+      .services .services-items .items-container .item .icon {
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 26px; }
+        .services .services-items .items-container .item .icon i {
+          font-size: 50px;
+          color: #ffd626; }
+      .services .services-items .items-container .item .text {
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 3; }
+        .services .services-items .items-container .item .text .title-serv {
+          font-size: 20px;
+          color: #000044; }
+        .services .services-items .items-container .item .text .description {
+          color: #64728A;
+          font-size: 16px; }
+        .services .services-items .items-container .item .text p {
+          white-space: nowrap;
+          font-size: 16px;
+          position: relative;
+          z-index: 1; }
+          .services .services-items .items-container .item .text p:hover {
+            color: #000000; }
+          .services .services-items .items-container .item .text p a {
+            color: #000044; }
+
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
@@ -806,5 +855,14 @@ it here for the time being*/
   .featured-works .featured-items .scroll-parent .item {
     width: 50%;
     flex: none; } }
+@media screen and (min-width: 901px) {
+  .services .items-container .item {
+    flex: 1 0 30%; } }
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  .services .items-container .item {
+    flex: 1 0 40%; } }
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .services .items-container .item {
+    flex: 1 0 100%; } }
 
 /*# sourceMappingURL=style.css.map */

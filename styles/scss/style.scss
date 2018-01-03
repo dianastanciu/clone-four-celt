@@ -626,7 +626,93 @@ html {
 
 //************************** FEATURED WORKS END **************************//
 
-/*i know the import statement should be placed at the beginning of the scss 
-file, but for whatever reason it is not working on my OS, so I will leave
-it here for the time being*/
+//************************** SERVICES START **************************//
+.services {
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+        .subtitle { @extend .subtitle-gen; }
+        .title { @extend .title-gen; }
+    }
+
+    .services-items {
+        width: 100%;
+        height: auto;
+        
+        .items-container{
+            width: 80%;
+            margin: 0 10%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .item {
+                display: flex;
+                width: 360px; height: auto;
+                margin: 3px;
+
+                &:hover {
+                    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+                }
+
+                .icon, .text {
+                    display: flex;
+                    flex: 1;
+                    height: 100%;
+                }
+
+                .icon {
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding-top: 26px;
+                    i {
+                        font-size: 50px;
+                        color: $generalYellow;
+                    }
+                }
+                .text {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    flex: 3;
+                    .title-serv {
+                        font-size: 20px;
+                        color: $titleColor;
+                    }
+    
+                    .description {
+                        color: $textColor;
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        position: relative;
+                        z-index: 1;
+                       
+                        @extend .before-p;
+    
+                        &:hover {
+                            color: $dark;
+    
+                            @extend .pointer;
+            
+                            &:before { 
+                                @extend .hover-state; 
+                            }
+                        }
+    
+                        a {color: $titleColor;}
+                    }
+                }
+            }
+        }
+    }   
+}
+
+//************************** SERVICES END **************************//
+
 @import 'responsive';
