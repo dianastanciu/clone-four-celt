@@ -320,11 +320,10 @@ nav {
       .features .container .item .image, .features .container .item .text {
         display: flex;
         flex: 1; }
-      .features .container .item .image {
+      .features .container .item .image img {
+        max-width: 100%;
+        height: auto;
         border-bottom: 5px solid #ffd626; }
-        .features .container .item .image img {
-          max-width: 100%;
-          height: auto; }
       .features .container .item .text {
         flex-direction: column;
         padding: 20px 0;
@@ -370,7 +369,7 @@ nav {
 /*i know the import statement should be placed at the beginning of the scss 
 file, but for whatever reason it is not working on my OS, so I will leave
 it here for the time being*/
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
 
@@ -608,8 +607,9 @@ it here for the time being*/
       flex-wrap: wrap;
       flex-direction: column; }
       .features .container .item {
-        margin-top: 30px;
-        padding: 0; }
+        margin-top: 30px; }
+        .features .container .item .image {
+          display: block; }
 
   .about {
     position: relative; }
