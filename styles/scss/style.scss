@@ -508,6 +508,95 @@ html {
         .subtitle { @extend .subtitle-gen; }
         .title { @extend .title-gen; }
     }
+
+    .featured-items {
+        display: flex;
+
+        .item {
+            display: flex;
+            flex: 1;
+            height: 350px;
+        }
+
+        .one {background: url('../../images/project1.jpg');}
+        .two {background: url('../../images/project2.jpg');}
+        .three {background: url('../../images/project3.jpg');}
+        .four {background: url('../../images/project4.jpg');}
+
+        .one, .two, .three, .four {
+            position: relative;
+            background-size: cover;
+            transition: all .2s ease;
+            border-bottom: 5px solid $generalYellow;
+
+            &:hover {
+                border-bottom: none;
+                background-position: 0px -100px;
+
+                .overlay-top { opacity: 1; }
+                .overlay-bottom { transform: scale(1); }
+            }
+
+            .overlay-top, .overlay-bottom {
+                position: absolute;
+                width: 100%;
+                transition: all .2s ease;
+            }
+
+            .overlay-top {
+                top: 0;
+                background: $overlayBgColorRGBA;
+                height: 100%;
+                opacity: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                    button {       
+                        margin-right: 2px;
+                        margin-top: -60px;
+                        width: 60px; height: 60px;
+                        background: $generalYellow;
+                        border: none;
+                        transition: all .2s ease;
+
+                        &:hover {
+                            opacity: .9;
+                            cursor: pointer;
+                        }
+                    }
+            }
+
+            .overlay-bottom {
+                background: $overlayBgColor;
+                bottom: 0;
+                left: 0;
+                height: 32%;
+                border-top: 5px solid $generalYellow;
+                transform: scaleY(0);
+                transform-origin: bottom;
+                display: flex;
+                flex-direction: column;
+                align-content: flex-start;
+                justify-content: center;
+
+                padding-left: 30px;
+
+                .proj-title {
+                    font: {
+                        size: 20px;
+                        weight: 500;
+                    }
+                    color: $light;
+                }
+
+                .proj-categ {
+                    font-size: 16px;
+                    color: $generalYellow;
+                }
+            }
+        }
+    }
 }
 
 //************************** FEATURED WORKS END **************************//

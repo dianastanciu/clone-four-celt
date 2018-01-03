@@ -406,6 +406,75 @@ nav {
   align-items: center;
   flex-direction: column;
   padding: 100px 0; }
+.featured-works .featured-items {
+  display: flex; }
+  .featured-works .featured-items .item {
+    display: flex;
+    flex: 1;
+    height: 350px; }
+  .featured-works .featured-items .one {
+    background: url("../../images/project1.jpg"); }
+  .featured-works .featured-items .two {
+    background: url("../../images/project2.jpg"); }
+  .featured-works .featured-items .three {
+    background: url("../../images/project3.jpg"); }
+  .featured-works .featured-items .four {
+    background: url("../../images/project4.jpg"); }
+  .featured-works .featured-items .one, .featured-works .featured-items .two, .featured-works .featured-items .three, .featured-works .featured-items .four {
+    position: relative;
+    background-size: cover;
+    transition: all .2s ease;
+    border-bottom: 5px solid #ffd626; }
+    .featured-works .featured-items .one:hover, .featured-works .featured-items .two:hover, .featured-works .featured-items .three:hover, .featured-works .featured-items .four:hover {
+      border-bottom: none;
+      background-position: 0px -100px; }
+      .featured-works .featured-items .one:hover .overlay-top, .featured-works .featured-items .two:hover .overlay-top, .featured-works .featured-items .three:hover .overlay-top, .featured-works .featured-items .four:hover .overlay-top {
+        opacity: 1; }
+      .featured-works .featured-items .one:hover .overlay-bottom, .featured-works .featured-items .two:hover .overlay-bottom, .featured-works .featured-items .three:hover .overlay-bottom, .featured-works .featured-items .four:hover .overlay-bottom {
+        transform: scale(1); }
+    .featured-works .featured-items .one .overlay-top, .featured-works .featured-items .one .overlay-bottom, .featured-works .featured-items .two .overlay-top, .featured-works .featured-items .two .overlay-bottom, .featured-works .featured-items .three .overlay-top, .featured-works .featured-items .three .overlay-bottom, .featured-works .featured-items .four .overlay-top, .featured-works .featured-items .four .overlay-bottom {
+      position: absolute;
+      width: 100%;
+      transition: all .2s ease; }
+    .featured-works .featured-items .one .overlay-top, .featured-works .featured-items .two .overlay-top, .featured-works .featured-items .three .overlay-top, .featured-works .featured-items .four .overlay-top {
+      top: 0;
+      background: rgba(0, 18, 50, 0.75);
+      height: 100%;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .featured-works .featured-items .one .overlay-top button, .featured-works .featured-items .two .overlay-top button, .featured-works .featured-items .three .overlay-top button, .featured-works .featured-items .four .overlay-top button {
+        margin-right: 2px;
+        margin-top: -60px;
+        width: 60px;
+        height: 60px;
+        background: #ffd626;
+        border: none;
+        transition: all .2s ease; }
+        .featured-works .featured-items .one .overlay-top button:hover, .featured-works .featured-items .two .overlay-top button:hover, .featured-works .featured-items .three .overlay-top button:hover, .featured-works .featured-items .four .overlay-top button:hover {
+          opacity: .9;
+          cursor: pointer; }
+    .featured-works .featured-items .one .overlay-bottom, .featured-works .featured-items .two .overlay-bottom, .featured-works .featured-items .three .overlay-bottom, .featured-works .featured-items .four .overlay-bottom {
+      background: #001232;
+      bottom: 0;
+      left: 0;
+      height: 32%;
+      border-top: 5px solid #ffd626;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      justify-content: center;
+      padding-left: 30px; }
+      .featured-works .featured-items .one .overlay-bottom .proj-title, .featured-works .featured-items .two .overlay-bottom .proj-title, .featured-works .featured-items .three .overlay-bottom .proj-title, .featured-works .featured-items .four .overlay-bottom .proj-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff; }
+      .featured-works .featured-items .one .overlay-bottom .proj-categ, .featured-works .featured-items .two .overlay-bottom .proj-categ, .featured-works .featured-items .three .overlay-bottom .proj-categ, .featured-works .featured-items .four .overlay-bottom .proj-categ {
+        font-size: 16px;
+        color: #ffd626; }
 
 /*i know the import statement should be placed at the beginning of the scss 
 file, but for whatever reason it is not working on my OS, so I will leave
