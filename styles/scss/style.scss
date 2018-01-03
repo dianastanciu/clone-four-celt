@@ -453,7 +453,6 @@ html {
 .skills {
     height: auto;
     background: $generalYellow;
-    margin-bottom: 200px;
     padding: 60px 0;
 
     .container {
@@ -495,6 +494,23 @@ html {
 }
 
 //************************** SKILLS END **************************//
+
+//************************** FEATURED WORKS START **************************//
+
+.featured-works {
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0;
+        
+        .subtitle { @extend .subtitle-gen; }
+        .title { @extend .title-gen; }
+    }
+}
+
+//************************** FEATURED WORKS END **************************//
 
 /*i know the import statement should be placed at the beginning of the scss 
 file, but for whatever reason it is not working on my OS, so I will leave
