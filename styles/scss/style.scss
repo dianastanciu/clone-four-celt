@@ -511,6 +511,7 @@ html {
 
     .featured-items {
         display: flex;
+        overflow-x: scroll;
 
         .item {
             display: flex;
@@ -596,6 +597,7 @@ html {
                 }
             }
         }
+
     }
 }
 
