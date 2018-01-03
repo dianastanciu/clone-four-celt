@@ -1,0 +1,110 @@
+
+//************************** EXTEND START **************************//
+  //item after hover
+  .hover-state-origin {
+    animation: hoverStateOrigin .2s forwards;
+
+    @keyframes hoverStateOrigin {
+        0% {transform: scaleY(1);}
+        100% {transform: scaleY(0)}
+    }
+}
+
+//item:hover
+.hover-state {
+    animation: hoverState .2s forwards;
+
+    @keyframes hoverState {
+        0% {transform: scaleY(0)}
+        100% {transform: scaleY(1);}
+    }
+}
+
+//item:hover - pointer
+.pointer {cursor: pointer;}
+
+//p:before
+.before-p {
+  &:before {
+      content: "";
+      width: 103%; height: 100%;
+      background: $generalYellow;
+      position: absolute;
+      transform-origin: bottom;
+      z-index: -1;
+      
+      @extend .hover-state-origin;
+  }
+}
+
+
+//btn:before + hover
+.btn-before {
+  &:before {
+      content: "";
+      position: absolute;
+      width: 100%; height: 100%;
+      background: $buttonColor;
+      top: 0; left: 0;
+      transform-origin: bottom;
+      z-index: 1;
+
+      @extend .hover-state-origin;
+
+      &:hover { @extend .hover-state; }
+  }
+}
+
+//button template
+.btn-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; height: 46px;
+  background: $generalYellow;
+  border: none;
+  position: relative;
+}
+
+//general subtitle {
+  .subtitle-gen {
+      font: {
+          size: 16px;
+          weight: 700;
+      }
+      color: $textColor;
+  }
+
+  //general title {
+  .title-gen {
+      font: {
+          size: 28px;
+          weight: 700;
+      }
+      height: 35px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      border-left: 15px solid $generalYellow;
+  }
+
+  //general description text . large
+  .desc-lg-gen {
+      font: {
+          size: 21px;
+          weight: 300;
+      }
+      line-height: 29px;
+      color: $descLgColor;
+  }
+
+  //general description text . small
+  .desc-sm-gen {
+      font: {
+          size: 16px;
+          weight: 300;
+      }
+      line-height: 29px;
+      color: $descLgColor;
+  }
+//************************** EXTEND END **************************//
