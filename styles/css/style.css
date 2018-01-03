@@ -612,10 +612,13 @@ it here for the time being*/
           display: block; }
 
   .about {
-    position: relative; }
+    position: relative;
+    background: url(../../images/about4.jpg);
+    background-size: cover;
+    background-position: top center; }
     .about .text {
-      background: #F8F8F8;
-      padding: 40px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 50px 130px;
       z-index: 2;
       margin: 0; }
     .about .image {
