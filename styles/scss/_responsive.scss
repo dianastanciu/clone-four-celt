@@ -295,3 +295,19 @@
         margin: 0 5%;
     }
 }
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+    .about {
+        .image {
+            display: block;
+            flex: 1;
+            background: url(../../images/about4.jpg);
+            background-size: cover;
+            img {
+                display: none;
+            }
+        }
+        .text { margin-left: 40px; }
+    }
+}
