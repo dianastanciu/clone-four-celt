@@ -4,6 +4,7 @@ $_sunglow: #ffd626;
 $_white: #ffffff;
 $_black: #000000;
 $_mastrichBlue: #001232;
+$_mastrichBlueRGBA_75: rgba(0,18,50,.75);
 $_lightMastrichBlue: #000044;
 $_isabelline: #EEEEEE;
 $_darkBlueGrey: #64728A;
@@ -23,4 +24,6 @@ $buttonColor: $_mastrichBlue;
 $aboutBgColor: $_ghostWhite;
 $descLgColor: $_darkBlueGrey;
 $iconColor: $_lightMastrichBlue;
+$overlayBgColor: $_mastrichBlue;
+$overlayBgColorRGBA: $_mastrichBlueRGBA_75;
 //************************** VARIABLES END **************************//
