@@ -790,4 +790,38 @@ html {
 .hiddenIcon {display: none!important;}
 //************************** /CHOOSE **************************//
 
+//************************** CONTACT **************************//
+.contact {
+    height: auto;
+    background: $generalYellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 50px;
+
+    .description-large, .description-small {
+        color: $titleColor;
+        font-weight: 700;
+    }
+    
+    .description-large {font-size: 28px;}
+    .description-small {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-top: 30px;
+
+        @extend .btn-temp-blue;
+        @extend .btn-before-blue;
+
+        &:hover {
+            p {color: $dark; z-index: 2;}
+            @extend .pointer;
+        }
+    }
+}
+//************************** /CONTACT **************************//
 @import 'responsive';

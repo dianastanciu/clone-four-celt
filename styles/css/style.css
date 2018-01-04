@@ -1,18 +1,18 @@
-.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before {
+.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
   0% {
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before, .services .services-items .items-container .item .text p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before, .services .services-items .items-container .item .text p:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
   0% {
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover {
   cursor: pointer; }
 
 .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before {
@@ -45,7 +45,7 @@
   border: none;
   position: relative; }
 
-.btn-temp-blue, .featured-works .btn-container .btn {
+.btn-temp-blue, .featured-works .btn-container .btn, .contact .btn {
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -53,21 +53,24 @@
   width: 150px;
   height: 46px;
   background: #001232;
+  border: 1px solid #001232;
   border: none;
   position: relative; }
 
-.btn-before-blue:before, .featured-works .btn-container .btn:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #ffd626;
-  top: 0;
-  left: 0;
-  transform-origin: bottom;
-  z-index: 1; }
-  .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p {
-    color: #000000; }
+.btn-before-blue, .featured-works .btn-container .btn, .contact .btn {
+  border: 1px solid #001232; }
+  .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffd626;
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    z-index: 1; }
+    .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p, .contact .btn:before:hover p {
+      color: #000000; }
 
 .subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle {
   font-size: 16px;
@@ -653,6 +656,28 @@ nav {
 
 .hiddenIcon {
   display: none !important; }
+
+.contact {
+  height: auto;
+  background: #ffd626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 50px; }
+  .contact .description-large, .contact .description-small {
+    color: #000044;
+    font-weight: 700; }
+  .contact .description-large {
+    font-size: 28px; }
+  .contact .description-small {
+    font-size: 16px;
+    margin-top: 20px; }
+  .contact .btn {
+    margin-top: 30px; }
+    .contact .btn:hover p {
+      color: #000000;
+      z-index: 2; }
 
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
