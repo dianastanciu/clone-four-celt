@@ -720,7 +720,6 @@ nav {
 
 .prefooter {
   background: #001232;
-  height: 400px;
   display: flex;
   padding: 0 150px; }
   .prefooter .column {
@@ -1180,5 +1179,19 @@ nav {
     padding: 50px 40px; }
     .contact-prefooter .btn {
       margin: 30px 0 0 0; } }
+@media screen and (max-width: 992px) {
+  .prefooter {
+    flex-direction: column;
+    padding: 0 90px; }
+    .prefooter .column {
+      padding-bottom: 10px; }
+    .prefooter .info .logo img {
+      max-width: 40% !important; }
+    .prefooter .info .description {
+      height: auto; }
+    .prefooter .keep-touch .description {
+      height: 120px; }
+    .prefooter .keep-touch .social ul {
+      width: 160px; } }
 
 /*# sourceMappingURL=style.css.map */
