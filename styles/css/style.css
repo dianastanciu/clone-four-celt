@@ -862,6 +862,19 @@ nav {
             .prefooter .keep-touch .social ul li:hover i {
               color: #000000; }
 
+.footer {
+  height: 100px;
+  background: #000F2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; }
+  .footer .text {
+    color: #64728A;
+    font-weight: 300; }
+    .footer .text .special {
+      color: #ffd626; }
+
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
