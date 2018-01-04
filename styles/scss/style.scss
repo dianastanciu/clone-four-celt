@@ -1036,4 +1036,25 @@ html {
     }
 }
 //************************** /PREFOOTER **************************//
+
+//************************** FOOTER **************************//
+.footer {
+    height: 100px;
+    background: $footerBgColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    
+    .text {
+        color: $textColor;
+        font-weight: 300;
+
+        .special {
+            color: $generalYellow;
+        }
+    }
+}
+//************************** /FOOTER **************************//
+
 @import 'responsive';
