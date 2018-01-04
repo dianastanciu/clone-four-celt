@@ -423,3 +423,32 @@
         }
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .prefooter {
+        flex-direction: column;
+        padding: 0 90px;
+
+        .column {
+            padding-bottom: 10px;
+        }
+
+        .info {
+            .logo {
+                img {max-width: 40%!important;}
+            }
+
+            .description {
+                height: auto;
+            }
+        }
+
+        .keep-touch {
+            .description {height: 120px;}
+            .social {
+                ul {width: 160px;}
+            }
+        }
+    }
+}

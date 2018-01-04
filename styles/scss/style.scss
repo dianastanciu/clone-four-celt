@@ -832,4 +832,208 @@ html {
 }
 
 //************************** /CONTACT PREFOOTER **************************//
+
+//************************** PREFOOTER **************************//
+.prefooter {
+    background: $prefooterBgColor;
+    display: flex;
+    padding: 0 150px;
+
+    .column{
+        display: flex; flex: 1;
+        justify-content: center;
+        color: $textColor;
+        font-weight: 300;
+        padding: 30px 20px;
+        
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+
+        .logo, .description, .address {
+            display: flex; 
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .logo {
+            flex: none;
+            height: 100px;
+            img {max-width: 60%;}
+        }
+        
+        .description {
+            flex: none;
+            height: 120px;
+        }
+
+        .address {
+            justify-content: space-around;
+            .map, .phone, .mail {
+                display: flex;
+            }
+        }
+
+        i {
+            color: $generalYellow;
+            margin-right: 10px;
+        }
+    }
+
+    .links {
+        display: flex; 
+        flex-direction: column;
+        .title, .links-container {
+            display: flex; flex: 1;
+            padding: 20px 0;
+        }
+
+        .title {
+            flex: none;
+            height: 100px;
+            padding: 20px 0;
+            align-items: center;
+
+            .title-text {
+                font-size: 20px;
+                font-weight: 700;
+                color: $light;
+                border-left: 9px solid $generalYellow;
+                height: 30px;
+                padding-left: 5px;
+            }
+        }
+        .links-container {
+            flex: 2;
+            padding: 0;
+            .links-1, .links-2 {
+                display: flex; flex: 1;
+            }
+
+            .links-1, .links-2 {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        font-size: 14px;
+                        transition: all .2s ease;
+
+                        &:hover {
+                            color: $light;
+                            padding-left: 5px;
+                            @extend .pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .keep-touch {
+        display: flex;
+        flex-direction: column;
+
+        .title, .description, .form, .social {
+            display: flex; flex: 1;
+            padding: 20px 0;
+        }
+
+        .title {
+            flex: none;
+            height: 100px;
+            padding: 20px 0;
+            align-items: center;
+
+            .title-text {
+                font-size: 20px;
+                font-weight: 700;
+                color: $light;
+                border-left: 9px solid $generalYellow;
+                height: 30px;
+                padding-left: 5px;
+            }
+        }
+
+        .description {
+            flex: none;
+            height: 120px;
+        }
+
+        .form {
+            align-items: center;
+            justify-content: center;
+            .input-text {
+                width: 90%; height: 40px;
+                background: none;
+                border: 1px solid $borderColor;//dont delete
+                padding: 10px;
+                color: $light;
+                padding: 0 100px 0 7px;
+                font: {
+                    family: 'Poppins', sans-serif;
+                    size: 14px;
+                    weight: 300;
+                }
+            }
+
+            .input-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -95px;
+                border: none; //dont delete
+                height: 30px;
+                width: 90px;
+                background: $generalYellow;
+                padding: 0 20px;
+                font: {
+                    family: 'Poppins', sans-serif;
+                    size: 14px;
+                    weight: 400;
+                }
+
+                &:hover {
+                    @extend .pointer;
+                }
+            }
+        }
+
+        .social {
+            align-items: center;
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                margin-left: 24px;
+                width: 60%;
+
+                li {
+                   display: flex;
+                   align-items: center; justify-content: center;
+                   border: 2px solid $generalYellow;//dont delete
+                   width: 35px; height: 35px;
+                   border-radius: 50%;
+                   transition: all .2s ease;
+
+                   i {color: $generalYellow;}
+
+                   &:hover {
+                       @extend .pointer;
+                       background: $generalYellow;
+
+                       i {color: $dark;}
+                    }
+                }
+            }
+        }
+    }
+}
+//************************** /PREFOOTER **************************//
 @import 'responsive';
