@@ -792,13 +792,13 @@ html {
 
 //************************** CONTACT **************************//
 .contact {
-    height: 323px;
+    height: auto;
     background: $generalYellow;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 60px 50px;
 
     .description-large, .description-small {
         color: $titleColor;

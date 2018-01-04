@@ -658,13 +658,13 @@ nav {
   display: none !important; }
 
 .contact {
-  height: 323px;
+  height: auto;
   background: #ffd626;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 50px; }
+  padding: 60px 50px; }
   .contact .description-large, .contact .description-small {
     color: #000044;
     font-weight: 700; }
