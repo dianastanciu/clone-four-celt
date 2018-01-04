@@ -145,6 +145,7 @@ html {
       width: 100%;
       top: 65px;
       z-index: 9999;
+      box-shadow: 0px 2px 5px rgba(0,0,0,.2);
 
       .container {
 
@@ -1045,7 +1046,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    
+
     .text {
         color: $textColor;
         font-weight: 300;
