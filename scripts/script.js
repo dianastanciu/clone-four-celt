@@ -123,6 +123,8 @@ $(document).ready(function() {
                 $(".tab.two > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.two > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow, add white
+                $(".tab.two > .tab-title").removeClass("yellow").addClass("white");
             //move tab two down
             $(".tab.two").removeClass("moveUp").addClass("moveDown");
                 
@@ -132,6 +134,8 @@ $(document).ready(function() {
                 $(".tab.one > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
                 //add hide to plus
                 $(".tab.one > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+                //add yellow
+                $(".tab.one > .tab-title").removeClass("white").addClass("yellow");
         } 
         //else if tab three shows the contents 
         else if ($(".tab.three > .desc-container").hasClass("show")) {
@@ -141,6 +145,8 @@ $(document).ready(function() {
                 $(".tab.three > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.three > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow add white
+                $(".tab.three > .tab-title").removeClass("yellow").addClass("white");
              //move tab two and three down
              $(".tab.two").removeClass("moveUp").addClass("moveDown");
              $(".tab.three").removeClass("moveThreeUp").addClass("moveDownThree");
@@ -152,6 +158,8 @@ $(document).ready(function() {
                 $(".tab.one > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
                 //add hide to plus
                 $(".tab.one > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+                //remove white add yellow
+                $(".tab.one > .tab-title").removeClass("white").addClass("yellow");
         } 
     });
 
@@ -166,6 +174,8 @@ $(document).ready(function() {
                 $(".tab.one > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.one > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow color and and white color
+                $(".tab.one > .tab-title").removeClass("yellow").addClass("white");
             //move tab two up
             $(".tab.two").addClass("moveUp");
                 //remove hide from minus
@@ -174,6 +184,8 @@ $(document).ready(function() {
                 $(".tab.two > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
             //show tab two contents
             $(".tab.two > .desc-container").removeClass("hideR").addClass("show");
+            //add yellow to tab two title
+            $(".tab.two > .tab-title").removeClass("white").addClass("yellow");
         } 
         //else if tab three shows the contents 
         else if ($(".tab.three > .desc-container").hasClass("show")) {
@@ -183,6 +195,8 @@ $(document).ready(function() {
                 $(".tab.three > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.three > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow add white
+                $(".tab.three > .tab-title").removeClass("yellow").addClass("white");
             //remove moveThreeUp and add moveDown
             $(".tab.three").removeClass("moveThreeUp").addClass("moveUp");
                 //remove hide from minus
@@ -191,6 +205,8 @@ $(document).ready(function() {
                 $(".tab.two > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
             //show tab two contents
             $(".tab.two > .desc-container").removeClass("hideR").addClass("show");
+            //remove white add yellow
+            $(".tab.two > .tab-title").removeClass("white").addClass("yellow");
         } 
     });
         
@@ -206,6 +222,8 @@ $(document).ready(function() {
                 $(".tab.one > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.one > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow color and and white color
+                $(".tab.one > .tab-title").removeClass("yellow").addClass("white");
             //move tab two up
             $(".tab.two").addClass("moveUp");
             //move tab three up
@@ -216,6 +234,8 @@ $(document).ready(function() {
                 $(".tab.three > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
             //show tab three contents
             $(".tab.three > .desc-container").removeClass("hideR").addClass("show");
+            //remove white color and add yellow color
+            $(".tab.three > .tab-title").removeClass("white").addClass("yellow");
         } 
 
         //else if tab two shows content
@@ -226,6 +246,8 @@ $(document).ready(function() {
                 $(".tab.two > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
                 //add hide to minus
                 $(".tab.two > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+                //remove yellow add white
+                $(".tab.two > .tab-title").removeClass("yellow").addClass("white");
             //move tab three up
             $(".tab.three").addClass("moveThreeUp");
                 //remove hide from minus
@@ -234,6 +256,8 @@ $(document).ready(function() {
                 $(".tab.three > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
             //show tab three contents
             $(".tab.three > .desc-container").removeClass("hideR").addClass("show");
+            //add yellow remove white
+            $(".tab.three > .tab-title").removeClass("white").addClass("yellow");
         }
     });
 });

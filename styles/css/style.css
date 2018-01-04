@@ -571,7 +571,8 @@ nav {
 .choose {
   height: 600px; }
   .choose .image {
-    background: url(../../images/choose.jpg); }
+    background: url(../../images/choose.jpg);
+    background-position: right; }
   .choose .tabs-container {
     width: 100%;
     display: flex;
@@ -895,18 +896,21 @@ nav {
         .features .container .item .image {
           display: block; }
 
-  .about {
+  .about, .choose {
     position: relative;
     background: url(../../images/about4.jpg);
     background-size: cover;
     background-position: top center; }
-    .about .text {
+    .about .text, .choose .text {
       background: rgba(255, 255, 255, 0.8);
       padding: 50px 130px;
       z-index: 2;
       margin: 0; }
-    .about .image {
-      display: none; } }
+    .about .image, .choose .image {
+      display: none; }
+
+  .choose {
+    background: url(../../images/choose.jpg); } }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .container {
     width: 90%;
@@ -950,5 +954,11 @@ nav {
 @media screen and (min-width: 320px) and (max-width: 550px) {
   .services .items-container .item {
     flex: 1 0 100%; } }
+@media screen and (min-width: 320px) and (max-width: 634px) {
+  .about, .choose {
+    height: 650px; }
+
+  .choose {
+    height: 900px; } }
 
 /*# sourceMappingURL=style.css.map */
