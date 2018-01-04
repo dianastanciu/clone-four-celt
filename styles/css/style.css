@@ -1,21 +1,21 @@
-.hover-state-origin, .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
+.hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
   0% {
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .features .container .item .text p:hover:before, .services .services-items .items-container .item .text p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
   0% {
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover {
+.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover {
   cursor: pointer; }
 
-.before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before {
+.before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before {
   content: "";
   width: 103%;
   height: 100%;
@@ -72,12 +72,12 @@
     .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p, .contact .btn:before:hover p {
       color: #000000; }
 
-.subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle {
+.subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle, .news .container .text-container .subtitle {
   font-size: 16px;
   font-weight: 700;
   color: #64728A; }
 
-.title-gen, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .featured-works .text .title, .services .text .title {
+.title-gen, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .featured-works .text .title, .services .text .title, .news .container .text-container .title {
   font-size: 28px;
   font-weight: 700;
   height: 35px;
@@ -122,6 +122,51 @@
       position: absolute; }
       .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .two-columns .text .inner-container .description-big, .about .text .inner-container .description-big, .choose .text .inner-container .description-big, .two-columns .text .inner-container .description-small, .about .text .inner-container .description-small, .choose .text .inner-container .description-small {
         margin: 10px 0; }
+
+.three-columns, .features, .news {
+  height: auto;
+  background: #fff;
+  top: 70px;
+  position: relative; }
+  .three-columns .container, .features .container, .news .container {
+    display: flex;
+    flex-wrap: wrap; }
+    .three-columns .container .item, .features .container .item, .news .container .item {
+      margin-top: 100px;
+      display: flex;
+      flex: 1;
+      padding: 40px;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      .three-columns .container .item .image, .features .container .item .image, .news .container .item .image, .three-columns .container .item .text, .features .container .item .text, .news .container .item .text {
+        display: flex;
+        flex: 1; }
+      .three-columns .container .item .image, .features .container .item .image, .news .container .item .image {
+        background: url(../../images/about1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px; }
+      .three-columns .container .item .text, .features .container .item .text, .news .container .item .text {
+        flex-direction: column;
+        padding: 20px 0;
+        justify-content: space-around; }
+        .three-columns .container .item .text .title, .features .container .item .text .title, .news .container .item .text .title {
+          font-size: 20px;
+          color: #000044; }
+        .three-columns .container .item .text .description, .features .container .item .text .description, .news .container .item .text .description {
+          color: #64728A;
+          font-size: 16px; }
+        .three-columns .container .item .text p, .features .container .item .text p, .news .container .item .text p {
+          white-space: nowrap;
+          font-size: 16px;
+          position: relative;
+          z-index: 1;
+          width: 40%; }
+          .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover {
+            color: #000000; }
+          .three-columns .container .item .text p a, .features .container .item .text p a, .news .container .item .text p a {
+            color: #000044; }
 
 html {
   box-sizing: border-box; }
@@ -353,50 +398,6 @@ nav {
         .header .container .title-container .btn:hover p {
           color: #ffffff;
           z-index: 2; }
-
-.features {
-  height: auto;
-  background: #fff;
-  top: 70px;
-  position: relative; }
-  .features .container {
-    flex-wrap: wrap; }
-    .features .container .item {
-      margin-top: 100px;
-      display: flex;
-      flex: 1;
-      padding: 40px;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column; }
-      .features .container .item .image, .features .container .item .text {
-        display: flex;
-        flex: 1; }
-      .features .container .item .image {
-        background: url(../../images/about1.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 300px; }
-      .features .container .item .text {
-        flex-direction: column;
-        padding: 20px 0;
-        justify-content: space-around; }
-        .features .container .item .text .title {
-          font-size: 20px;
-          color: #000044; }
-        .features .container .item .text .description {
-          color: #64728A;
-          font-size: 16px; }
-        .features .container .item .text p {
-          white-space: nowrap;
-          font-size: 16px;
-          position: relative;
-          z-index: 1;
-          width: 40%; }
-          .features .container .item .text p:hover {
-            color: #000000; }
-          .features .container .item .text p a {
-            color: #000044; }
 
 .skills {
   height: auto;
@@ -679,6 +680,28 @@ nav {
       color: #000000;
       z-index: 2; }
 
+.news .container {
+  flex-direction: column; }
+  .news .container .item-container {
+    display: flex; }
+    .news .container .item-container .item {
+      margin-top: 60px; }
+      .news .container .item-container .item .image {
+        border-bottom: 5px solid #ffd626;
+        background: url(../../images/news.jpg);
+        background-position: center; }
+      .news .container .item-container .item .info {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        color: #64728A;
+        font-size: 14px;
+        font-weight: 300;
+        padding-top: 15px; }
+  .news .container .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
@@ -907,19 +930,22 @@ nav {
     .header .container {
       z-index: 2; }
 
-  .features {
+  .features, .news {
     display: flex;
     justify-content: center;
     z-index: 2; }
-    .features .container {
+    .features .container, .news .container {
       margin: 0;
       height: auto;
       flex-wrap: wrap;
       flex-direction: column; }
-      .features .container .item {
+      .features .container .item, .news .container .item {
         margin-top: 30px; }
-        .features .container .item .image {
+        .features .container .item .image, .news .container .item .image {
           display: block; }
+
+  .news .container .item-container {
+    flex-direction: column; }
 
   .about, .choose {
     position: relative;

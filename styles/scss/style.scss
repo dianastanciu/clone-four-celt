@@ -350,68 +350,7 @@ html {
 
 //************************** FEATURES **************************//
 .features {
-    height: auto;
-    background: #fff;
-    top: 70px;
-    position: relative;
-    .container {
-        flex-wrap: wrap;
-        .item {
-            margin-top: 100px;
-            display: flex;
-            flex: 1;
-            padding: 40px;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-
-            .image, .text {display: flex; flex: 1;}
-
-            .image {
-                background: url(../../images/about1.jpg);
-                background-size: cover;
-                background-position: center;
-                height: 300px;
-            }
-            .text {
-                flex-direction: column;
-                padding: 20px 0;
-                justify-content: space-around;
-
-                .title {
-                    font-size: 20px;
-                    color: $titleColor;
-                }
-
-                .description {
-                    color: $textColor;
-                    font-size: 16px;
-                }
-
-                p {
-                    white-space: nowrap;
-                    font-size: 16px;
-                    position: relative;
-                    z-index: 1;
-                    width: 40%;
-                   
-                    @extend .before-p;
-
-                    &:hover {
-                        color: $dark;
-
-                        @extend .pointer;
-        
-                        &:before { 
-                            @extend .hover-state; 
-                        }
-                    }
-
-                    a {color: $titleColor;}
-                }
-            }
-        }
-    }
+    @extend .three-columns;
 }
 //************************** /FEATURES **************************//
 
@@ -824,4 +763,47 @@ html {
     }
 }
 //************************** /CONTACT **************************//
+
+//************************** NEWS **************************//
+.news {
+    @extend .three-columns;
+
+    .container {
+        flex-direction: column;
+
+        .item-container {
+            display: flex;
+
+            .item {
+                margin-top: 60px;
+
+                .image {
+                    border-bottom: 5px solid $generalYellow;
+                    background: url(../../images/news.jpg);
+                    background-position: center;
+                }
+
+                .info {
+                    border-bottom: 1px solid rgba(0,0,0,.1);
+                    color: $textColor;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding-top: 15px;
+                }
+            }
+        }
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            .subtitle { @extend .subtitle-gen; }
+            .title { @extend .title-gen; }
+        }
+    }
+}
+//************************** /NEWS **************************//
+
+
 @import 'responsive';
