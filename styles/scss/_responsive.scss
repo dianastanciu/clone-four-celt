@@ -270,7 +270,7 @@
     }
 
 
-    .about {
+    .about, .choose {
         position: relative;
         background: url(../../images/about4.jpg);
         background-size: cover;
@@ -286,6 +286,10 @@
         .image {
             display: none;
         }
+    }
+
+    .choose {
+        background: url(../../images/choose.jpg);
     }
 }
 
@@ -385,4 +389,16 @@
             }
         }
     }   
+}
+
+
+//two columns responsive : about + choose
+@media screen and (min-width: 320px) and (max-width: 634px) {
+    .about, .choose {
+        height: 650px;
+    }
+
+    .choose {
+        height: 900px;
+    }
 }
