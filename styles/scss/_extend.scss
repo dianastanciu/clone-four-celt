@@ -74,6 +74,7 @@
     justify-content: center;
     width: 150px; height: 46px;
     background: $buttonColor;
+    border: 1px solid $buttonColor;
     border: none;
     position: relative;
   }
@@ -81,7 +82,7 @@
   
 //btn hover // YELLOW ON HOVER
 .btn-before-blue {
-    
+    border: 1px solid $buttonColor;
     &:before {
         content: "";
         position: absolute;
