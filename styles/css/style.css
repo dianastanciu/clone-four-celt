@@ -12,7 +12,7 @@
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover {
+.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover, .prefooter .links .links-container .links-1 ul li:hover, .prefooter .links .links-container .links-2 ul li:hover, .prefooter .keep-touch .form .input-btn:hover, .prefooter .keep-touch .social ul li:hover {
   cursor: pointer; }
 
 .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before {
@@ -718,6 +718,150 @@ nav {
       color: #000000;
       z-index: 2; }
 
+.prefooter {
+  background: #001232;
+  display: flex;
+  padding: 0 150px; }
+  .prefooter .column {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: #64728A;
+    font-weight: 300;
+    padding: 30px 20px; }
+  .prefooter .info {
+    display: flex;
+    flex-direction: column; }
+    .prefooter .info .logo, .prefooter .info .description, .prefooter .info .address {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0; }
+    .prefooter .info .logo {
+      flex: none;
+      height: 100px; }
+      .prefooter .info .logo img {
+        max-width: 60%; }
+    .prefooter .info .description {
+      flex: none;
+      height: 120px; }
+    .prefooter .info .address {
+      justify-content: space-around; }
+      .prefooter .info .address .map, .prefooter .info .address .phone, .prefooter .info .address .mail {
+        display: flex; }
+    .prefooter .info i {
+      color: #ffd626;
+      margin-right: 10px; }
+  .prefooter .links {
+    display: flex;
+    flex-direction: column; }
+    .prefooter .links .title, .prefooter .links .links-container {
+      display: flex;
+      flex: 1;
+      padding: 20px 0; }
+    .prefooter .links .title {
+      flex: none;
+      height: 100px;
+      padding: 20px 0;
+      align-items: center; }
+      .prefooter .links .title .title-text {
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        border-left: 9px solid #ffd626;
+        height: 30px;
+        padding-left: 5px; }
+    .prefooter .links .links-container {
+      flex: 2;
+      padding: 0; }
+      .prefooter .links .links-container .links-1, .prefooter .links .links-container .links-2 {
+        display: flex;
+        flex: 1; }
+      .prefooter .links .links-container .links-1 ul, .prefooter .links .links-container .links-2 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0; }
+        .prefooter .links .links-container .links-1 ul li, .prefooter .links .links-container .links-2 ul li {
+          font-size: 14px;
+          transition: all .2s ease; }
+          .prefooter .links .links-container .links-1 ul li:hover, .prefooter .links .links-container .links-2 ul li:hover {
+            color: #ffffff;
+            padding-left: 5px; }
+  .prefooter .keep-touch {
+    display: flex;
+    flex-direction: column; }
+    .prefooter .keep-touch .title, .prefooter .keep-touch .description, .prefooter .keep-touch .form, .prefooter .keep-touch .social {
+      display: flex;
+      flex: 1;
+      padding: 20px 0; }
+    .prefooter .keep-touch .title {
+      flex: none;
+      height: 100px;
+      padding: 20px 0;
+      align-items: center; }
+      .prefooter .keep-touch .title .title-text {
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        border-left: 9px solid #ffd626;
+        height: 30px;
+        padding-left: 5px; }
+    .prefooter .keep-touch .description {
+      flex: none;
+      height: 120px; }
+    .prefooter .keep-touch .form {
+      align-items: center;
+      justify-content: center; }
+      .prefooter .keep-touch .form .input-text {
+        width: 90%;
+        height: 40px;
+        background: none;
+        border: 1px solid #64728A;
+        padding: 10px;
+        color: #ffffff;
+        padding: 0 100px 0 7px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 300; }
+      .prefooter .keep-touch .form .input-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -95px;
+        border: none;
+        height: 30px;
+        width: 90px;
+        background: #ffd626;
+        padding: 0 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400; }
+    .prefooter .keep-touch .social {
+      align-items: center; }
+      .prefooter .keep-touch .social ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-left: 24px;
+        width: 60%; }
+        .prefooter .keep-touch .social ul li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #ffd626;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          transition: all .2s ease; }
+          .prefooter .keep-touch .social ul li i {
+            color: #ffd626; }
+          .prefooter .keep-touch .social ul li:hover {
+            background: #ffd626; }
+            .prefooter .keep-touch .social ul li:hover i {
+              color: #000000; }
+
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
@@ -1035,5 +1179,19 @@ nav {
     padding: 50px 40px; }
     .contact-prefooter .btn {
       margin: 30px 0 0 0; } }
+@media screen and (max-width: 992px) {
+  .prefooter {
+    flex-direction: column;
+    padding: 0 90px; }
+    .prefooter .column {
+      padding-bottom: 10px; }
+    .prefooter .info .logo img {
+      max-width: 40% !important; }
+    .prefooter .info .description {
+      height: auto; }
+    .prefooter .keep-touch .description {
+      height: 120px; }
+    .prefooter .keep-touch .social ul {
+      width: 160px; } }
 
 /*# sourceMappingURL=style.css.map */
