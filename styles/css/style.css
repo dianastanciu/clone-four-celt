@@ -1,18 +1,18 @@
-.hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
+.hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
   0% {
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .contact-prefooter .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
   0% {
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover {
+.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover {
   cursor: pointer; }
 
 .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before {
@@ -45,7 +45,7 @@
   border: none;
   position: relative; }
 
-.btn-temp-blue, .featured-works .btn-container .btn, .contact .btn {
+.btn-temp-blue, .featured-works .btn-container .btn, .contact .btn, .contact-prefooter .btn {
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -57,9 +57,9 @@
   border: none;
   position: relative; }
 
-.btn-before-blue, .featured-works .btn-container .btn, .contact .btn {
+.btn-before-blue, .featured-works .btn-container .btn, .contact .btn, .contact-prefooter .btn {
   border: 1px solid #001232; }
-  .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before {
+  .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -69,7 +69,7 @@
     left: 0;
     transform-origin: bottom;
     z-index: 1; }
-    .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p, .contact .btn:before:hover p {
+    .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p, .contact .btn:before:hover p, .contact-prefooter .btn:before:hover p {
       color: #000000; }
 
 .subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle, .news .container .text-container .subtitle {
@@ -702,6 +702,22 @@ nav {
     align-items: center;
     flex-direction: column; }
 
+.contact-prefooter {
+  padding: 50px 150px;
+  background: #ffd626;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 70px; }
+  .contact-prefooter .contact-text {
+    font-size: 20px;
+    font-weight: 700; }
+  .contact-prefooter .btn {
+    margin: 30px 100px 0; }
+    .contact-prefooter .btn:hover p {
+      color: #000000;
+      z-index: 2; }
+
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
@@ -1011,5 +1027,13 @@ nav {
 
   .choose {
     height: 900px; } }
+@media screen and (min-width: 320px) and (max-width: 1289px) {
+  .contact-prefooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px; }
+    .contact-prefooter .btn {
+      margin: 30px 0 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
