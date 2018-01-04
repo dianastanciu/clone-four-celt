@@ -110,4 +110,130 @@ $(document).ready(function() {
         $(".cntc").toggleClass("move-blg");
         $(".burger > .hidden-menu-burger > .blg > .fa-plus").toggleClass("hide-plus");
     });
+
+    //why choose us tabs
+    //1
+    //when click on tab one
+    $(".tab.one").on("click", function() {
+        //if tab two shows the contents
+        if ($(".tab.two > .desc-container").hasClass("show")) {
+            //hide tab two contents
+                $(".tab.two > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.two > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.two > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+            //move tab two down
+            $(".tab.two").removeClass("moveUp").addClass("moveDown");
+                
+            //show tab one contents
+            $(".tab.one > .desc-container").removeClass("hideR").addClass("show");
+                //remove hide from minus
+                $(".tab.one > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.one > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+        } 
+        //else if tab three shows the contents 
+        else if ($(".tab.three > .desc-container").hasClass("show")) {
+            //hide tab three contents
+                $(".tab.three > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.three > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.three > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+             //move tab two and three down
+             $(".tab.two").removeClass("moveUp").addClass("moveDown");
+             $(".tab.three").removeClass("moveThreeUp").addClass("moveDownThree");
+
+
+            //show tab one contents
+            $(".tab.one > .desc-container").removeClass("hideR").addClass("show");
+                //remove hide from minus
+                $(".tab.one > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.one > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+        } 
+    });
+
+    //2
+    //when click on tab two
+    $(".tab.two").on("click", function() {
+        //if tab one shows the contents
+        if ($(".tab.one > .desc-container").hasClass("show")) {
+            //hide tab one contents
+                $(".tab.one > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.one > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.one > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+            //move tab two up
+            $(".tab.two").addClass("moveUp");
+                //remove hide from minus
+                $(".tab.two > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.two > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+            //show tab two contents
+            $(".tab.two > .desc-container").removeClass("hideR").addClass("show");
+        } 
+        //else if tab three shows the contents 
+        else if ($(".tab.three > .desc-container").hasClass("show")) {
+            //hide tab three contents
+                $(".tab.three > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.three > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.three > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+            //remove moveThreeUp and add moveDown
+            $(".tab.three").removeClass("moveThreeUp").addClass("moveUp");
+                //remove hide from minus
+                $(".tab.two > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.two > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+            //show tab two contents
+            $(".tab.two > .desc-container").removeClass("hideR").addClass("show");
+        } 
+    });
+        
+
+    //3 
+    //when click on tab three
+    $(".tab.three").on("click", function() {
+        //if tab one shows content
+        if($(".tab.one > .desc-container").hasClass("show")) {
+            //hide tab one contents
+            $(".tab.one > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.one > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.one > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+            //move tab two up
+            $(".tab.two").addClass("moveUp");
+            //move tab three up
+            $(".tab.three").addClass("moveThreeUp");
+                //remove hide from minus
+                $(".tab.three > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.three > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+            //show tab three contents
+            $(".tab.three > .desc-container").removeClass("hideR").addClass("show");
+        } 
+
+        //else if tab two shows content
+        else if($(".tab.two > .desc-container").hasClass("show")) {
+            //hide tab two contents
+            $(".tab.two > .desc-container").removeClass("show").addClass("hideR");
+                //remove hide from plus 
+                $(".tab.two > .tab-title > .icon-t > .fa-plus").removeClass("hiddenIcon");
+                //add hide to minus
+                $(".tab.two > .tab-title > .icon-t > .fa-minus").addClass("hiddenIcon");
+            //move tab three up
+            $(".tab.three").addClass("moveThreeUp");
+                //remove hide from minus
+                $(".tab.three > .tab-title > .icon-t > .fa-minus").removeClass("hiddenIcon");
+                //add hide to plus
+                $(".tab.three > .tab-title > .icon-t > .fa-plus").addClass("hiddenIcon");
+            //show tab three contents
+            $(".tab.three > .desc-container").removeClass("hideR").addClass("show");
+        }
+    });
 });
