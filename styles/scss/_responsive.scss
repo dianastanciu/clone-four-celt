@@ -251,7 +251,7 @@
 
 
     .header { top: 180px; .container{z-index: 2;} }
-    .features {
+    .features, .news {
         display: flex;
         justify-content: center;
         z-index: 2;
@@ -265,6 +265,14 @@
                 margin-top: 30px;
 
                 .image { display: block; }
+            }
+        }
+    }
+
+    .news {
+        .container {
+            .item-container {
+                flex-direction: column;
             }
         }
     }
