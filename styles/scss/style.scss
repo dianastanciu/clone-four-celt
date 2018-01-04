@@ -805,5 +805,31 @@ html {
 }
 //************************** /NEWS **************************//
 
+//************************** CONTACT PREFOOTER **************************//
+.contact-prefooter {
+    padding: 50px 150px;
+    background: $generalYellow;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 70px;
 
+    .contact-text {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .btn {
+        margin:30px 100px 0;
+
+        @extend .btn-temp-blue;
+        @extend .btn-before-blue;
+
+        &:hover {
+            p {color: $dark; z-index: 2;}
+            @extend .pointer;
+        }
+    }
+}
+
+//************************** /CONTACT PREFOOTER **************************//
 @import 'responsive';
