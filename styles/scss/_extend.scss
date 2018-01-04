@@ -143,4 +143,39 @@
       line-height: 29px;
       color: $descLgColor;
   }
-//************************** EXTEND END **************************//
+
+  //two columns - image + text 
+  .two-columns {
+    width: 100%; height: 500px;
+    display: flex;
+    background: $aboutBgColor;
+    margin-top: 70px;
+
+    .image, .text { display: flex; flex: 1; }
+
+    .image { 
+        flex: 1;
+        background: url(../../images/about4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text {
+        padding: 40px 60px 40px 0;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .inner-container {
+            width: 70%;
+            position: absolute;
+
+            .subtitle, .title, .description-big, .description-small { margin: 10px 0;}
+            .subtitle { @extend .subtitle-gen; }
+            .title { @extend .title-gen; }
+            .description-big { @extend .desc-lg-gen; }
+            .description-small { @extend .desc-sm-gen;}
+        }
+    }
+  }
+  //************************** /EXTEND **************************//

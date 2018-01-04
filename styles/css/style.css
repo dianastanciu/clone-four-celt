@@ -12,7 +12,7 @@
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
-.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover {
+.pointer, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .features .container .item .text p:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover {
   cursor: pointer; }
 
 .before-p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .features .container .item .text p:before, .services .services-items .items-container .item .text p:before {
@@ -69,12 +69,12 @@
   .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p {
     color: #000000; }
 
-.subtitle-gen, .about .text .subtitle, .featured-works .text .subtitle, .services .text .subtitle {
+.subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle {
   font-size: 16px;
   font-weight: 700;
   color: #64728A; }
 
-.title-gen, .about .text .title, .featured-works .text .title, .services .text .title {
+.title-gen, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .featured-works .text .title, .services .text .title {
   font-size: 28px;
   font-weight: 700;
   height: 35px;
@@ -83,17 +83,42 @@
   padding-left: 10px;
   border-left: 15px solid #ffd626; }
 
-.desc-lg-gen, .about .text .description-big {
+.desc-lg-gen, .two-columns .text .inner-container .description-big, .about .text .inner-container .description-big, .choose .text .inner-container .description-big {
   font-size: 21px;
   font-weight: 300;
   line-height: 29px;
   color: #64728A; }
 
-.desc-sm-gen, .about .text .description-small {
+.desc-sm-gen, .two-columns .text .inner-container .description-small, .about .text .inner-container .description-small, .choose .text .inner-container .description-small {
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
   color: #64728A; }
+
+.two-columns, .about, .choose {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background: #F8F8F8;
+  margin-top: 70px; }
+  .two-columns .image, .about .image, .choose .image, .two-columns .text, .about .text, .choose .text {
+    display: flex;
+    flex: 1; }
+  .two-columns .image, .about .image, .choose .image {
+    flex: 1;
+    background: url(../../images/about4.jpg);
+    background-size: cover;
+    background-position: center; }
+  .two-columns .text, .about .text, .choose .text {
+    padding: 40px 60px 40px 0;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .two-columns .text .inner-container, .about .text .inner-container, .choose .text .inner-container {
+      width: 70%;
+      position: absolute; }
+      .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .two-columns .text .inner-container .description-big, .about .text .inner-container .description-big, .choose .text .inner-container .description-big, .two-columns .text .inner-container .description-small, .about .text .inner-container .description-small, .choose .text .inner-container .description-small {
+        margin: 10px 0; }
 
 html {
   box-sizing: border-box; }
@@ -370,30 +395,6 @@ nav {
           .features .container .item .text p a {
             color: #000044; }
 
-.about {
-  width: 100%;
-  height: auto;
-  display: flex;
-  background: #F8F8F8;
-  margin-top: 70px; }
-  .about .image, .about .text {
-    display: flex;
-    flex: 1; }
-  .about .image {
-    flex: 2;
-    flex: 1;
-    background: url(../../images/about4.jpg);
-    background-size: cover; }
-    .about .image img {
-      display: none; }
-  .about .text {
-    padding: 40px 60px 40px 0;
-    margin-left: 50px;
-    flex-direction: column;
-    justify-content: space-around; }
-    .about .text .subtitle, .about .text .title, .about .text .description-big, .about .text .description-small {
-      margin: 10px 0; }
-
 .skills {
   height: auto;
   background: #ffd626;
@@ -566,6 +567,91 @@ nav {
             color: #000000; }
           .services .services-items .items-container .item .text p a {
             color: #000044; }
+
+.choose {
+  height: 600px; }
+  .choose .image {
+    background: url(../../images/choose.jpg); }
+  .choose .tabs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .choose .tabs-container .tab {
+      display: flex;
+      flex-direction: column; }
+      .choose .tabs-container .tab .tab-title {
+        display: flex;
+        justify-content: space-between;
+        height: 37px;
+        align-items: center;
+        padding: 0 10px 0; }
+        .choose .tabs-container .tab .tab-title .title-t {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000044; }
+      .choose .tabs-container .tab .desc-container {
+        transform-origin: top; }
+        .choose .tabs-container .tab .desc-container .tab-description {
+          display: flex; }
+          .choose .tabs-container .tab .desc-container .tab-description p {
+            font-size: 16px;
+            color: #64728A;
+            font-weight: 300;
+            padding: 0 20px; }
+
+.hide {
+  animation: hide .1s forwards; }
+
+@keyframes hide {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+.hideR {
+  animation: hideR .1s forwards; }
+
+@keyframes hideR {
+  0% {
+    transform: scaleY(1); }
+  100% {
+    transform: scaleY(0); } }
+.show {
+  animation: show .1s forwards; }
+
+@keyframes show {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+.showR {
+  animation: showR .1s forwards; }
+
+@keyframes showR {
+  0% {
+    transform: scaleY(1); }
+  100% {
+    transform: scaleY(0); } }
+.moveDown {
+  transform: translateY(15%); }
+
+.moveDownThree {
+  transform: translateY(25%); }
+
+.moveUp {
+  transform: translateY(-45%); }
+
+.moveThreeUp {
+  transform: translateY(-90%); }
+
+.yellow {
+  background: #ffd626; }
+
+.white {
+  background: #ffffff;
+  border: 1px solid #64728A; }
+
+.hiddenIcon {
+  display: none !important; }
 
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
