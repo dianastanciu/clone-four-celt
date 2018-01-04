@@ -798,6 +798,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 50px;
 
     .description-large, .description-small {
         color: $titleColor;
@@ -812,7 +813,7 @@ html {
 
     .btn {
         margin-top: 30px;
-        
+
         @extend .btn-temp-blue;
         @extend .btn-before-blue;
 
