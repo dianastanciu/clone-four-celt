@@ -303,7 +303,7 @@ a {
     justify-content: flex-end; }
     .top-bar-container .container .adr, .top-bar-container .container .tel, .top-bar-container .container .em {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       padding: 0 10px; }
       .top-bar-container .container .adr i, .top-bar-container .container .tel i, .top-bar-container .container .em i {
         padding: 10px 12px;
