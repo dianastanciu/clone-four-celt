@@ -1,3 +1,5 @@
+/************************** EXTEND **************************/
+/*item after hover*/
 .hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
@@ -5,6 +7,7 @@
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
+/*item:hover*/
 .hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .contact-prefooter .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
@@ -12,9 +15,11 @@
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
+/*item:hover - pointer*/
 .pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover, .prefooter .links .links-container .links-1 ul li:hover, .prefooter .links .links-container .links-2 ul li:hover, .prefooter .keep-touch .form .input-btn:hover, .prefooter .keep-touch .social ul li:hover {
   cursor: pointer; }
 
+/*p:before*/
 .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before {
   content: "";
   width: 103%;
@@ -24,6 +29,7 @@
   transform-origin: bottom;
   z-index: -1; }
 
+/*btn hover // BLUE ON HOVER*/
 .btn-before:before, .header .container .title-container .btn:before {
   content: "";
   position: absolute;
@@ -35,6 +41,7 @@
   transform-origin: bottom;
   z-index: 1; }
 
+/*button template // YELLOW BY DEFAULT*/
 .btn-temp, .header .container .title-container .btn {
   display: flex;
   align-items: center;
@@ -45,6 +52,7 @@
   border: none;
   position: relative; }
 
+/*button template // BLUE BY DEFAULT*/
 .btn-temp-blue, .featured-works .btn-container .btn, .contact .btn, .contact-prefooter .btn {
   color: #ffffff;
   display: flex;
@@ -57,6 +65,7 @@
   border: none;
   position: relative; }
 
+/*btn hover // YELLOW ON HOVER*/
 .btn-before-blue, .featured-works .btn-container .btn, .contact .btn, .contact-prefooter .btn {
   border: 1px solid #001232; }
   .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
@@ -72,11 +81,13 @@
     .btn-before-blue:before:hover p, .featured-works .btn-container .btn:before:hover p, .contact .btn:before:hover p, .contact-prefooter .btn:before:hover p {
       color: #000000; }
 
+/*general subtitle */
 .subtitle-gen, .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .featured-works .text .subtitle, .services .text .subtitle, .news .container .text-container .subtitle {
   font-size: 16px;
   font-weight: 700;
   color: #64728A; }
 
+/*general title*/
 .title-gen, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .featured-works .text .title, .services .text .title, .news .container .text-container .title {
   font-size: 28px;
   font-weight: 700;
@@ -86,18 +97,21 @@
   padding-left: 10px;
   border-left: 15px solid #ffd626; }
 
+/*general description text . large*/
 .desc-lg-gen, .two-columns .text .inner-container .description-big, .about .text .inner-container .description-big, .choose .text .inner-container .description-big {
   font-size: 21px;
   font-weight: 300;
   line-height: 29px;
   color: #64728A; }
 
+/*general description text . small*/
 .desc-sm-gen, .two-columns .text .inner-container .description-small, .about .text .inner-container .description-small, .choose .text .inner-container .description-small {
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
   color: #64728A; }
 
+/*two columns - image + text */
 .two-columns, .about, .choose {
   width: 100%;
   height: 500px;
@@ -123,6 +137,7 @@
       .two-columns .text .inner-container .subtitle, .about .text .inner-container .subtitle, .choose .text .inner-container .subtitle, .two-columns .text .inner-container .title, .about .text .inner-container .title, .choose .text .inner-container .title, .two-columns .text .inner-container .description-big, .about .text .inner-container .description-big, .choose .text .inner-container .description-big, .two-columns .text .inner-container .description-small, .about .text .inner-container .description-small, .choose .text .inner-container .description-small {
         margin: 10px 0; }
 
+/*three columns items - features*/
 .three-columns, .features, .news {
   height: auto;
   background: #fff;
@@ -168,6 +183,54 @@
           .three-columns .container .item .text p a, .features .container .item .text p a, .news .container .item .text p a {
             color: #000044; }
 
+/************************** /EXTEND **************************/
+/************************** RESET **************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/************************** /RESET **************************/
+/************************** BASIC **************************/
 html {
   box-sizing: border-box; }
 
@@ -178,10 +241,10 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0; }
+  overflow-x: hidden; }
 
+/************************** /BASIC **************************/
+/************************** GENERAL **************************/
 .container {
   width: 85%;
   height: 100%;
@@ -228,6 +291,8 @@ a {
     transform: scaleY(1); }
   100% {
     transform: scaleY(0); } }
+/************************** /GENERAL **************************/
+/************************** TOP BAR **************************/
 .top-bar-container {
   position: fixed;
   width: 100%;
@@ -238,7 +303,7 @@ a {
     justify-content: flex-end; }
     .top-bar-container .container .adr, .top-bar-container .container .tel, .top-bar-container .container .em {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       padding: 0 10px; }
       .top-bar-container .container .adr i, .top-bar-container .container .tel i, .top-bar-container .container .em i {
         padding: 10px 12px;
@@ -268,6 +333,8 @@ a {
         .top-bar-container .container .adr:hover p a, .top-bar-container .container .tel:hover p a, .top-bar-container .container .em:hover p a {
           color: #000000; }
 
+/************************** /TOP BAR **************************/
+/************************** NAVIGATION **************************/
 nav {
   height: 60px;
   background: #ffffff;
@@ -355,6 +422,8 @@ nav {
           font-weight: 300;
           color: #64728A; }
 
+/************************* /NAVIGATION **************************/
+/************************** HEADER **************************/
 .header {
   height: 100vh;
   background: #fff;
@@ -400,6 +469,18 @@ nav {
           color: #ffffff;
           z-index: 2; }
 
+/************************** /HEADER **************************/
+/************************** FEATURES **************************/
+.features {
+  /*extend class .three-columns*/ }
+
+/************************** /FEATURES **************************/
+/************************** ABOUT **************************/
+.about {
+  /*extend class .two-columns*/ }
+
+/************************** /ABOUT **************************/
+/************************** SKILLS **************************/
 .skills {
   height: auto;
   background: #ffd626;
@@ -430,6 +511,8 @@ nav {
         .skills .container .item .icon i {
           font-size: 35px; }
 
+/************************** /SKILLS **************************/
+/************************** FEATURED WORKS **************************/
 .featured-works .text {
   display: flex;
   justify-content: center;
@@ -521,6 +604,8 @@ nav {
     color: #000000;
     z-index: 2; }
 
+/************************** /FEATURED WORKS **************************/
+/************************** SERVICES **************************/
 .services .text {
   display: flex;
   justify-content: center;
@@ -573,6 +658,8 @@ nav {
           .services .services-items .items-container .item .text p a {
             color: #000044; }
 
+/************************* /SERVICES **************************/
+/************************** CHOOSE **************************/
 .choose {
   height: 600px; }
   .choose .image {
@@ -659,6 +746,8 @@ nav {
 .hiddenIcon {
   display: none !important; }
 
+/************************** /CHOOSE **************************/
+/************************** CONTACT **************************/
 .contact {
   height: auto;
   background: #ffd626;
@@ -681,6 +770,8 @@ nav {
       color: #000000;
       z-index: 2; }
 
+/************************** /CONTACT **************************/
+/************************** NEWS **************************/
 .news .container {
   flex-direction: column; }
   .news .container .item-container {
@@ -703,6 +794,8 @@ nav {
     align-items: center;
     flex-direction: column; }
 
+/************************** /NEWS **************************/
+/************************** CONTACT PREFOOTER **************************/
 .contact-prefooter {
   padding: 50px 150px;
   background: #ffd626;
@@ -719,6 +812,8 @@ nav {
       color: #000000;
       z-index: 2; }
 
+/************************** /CONTACT PREFOOTER **************************/
+/************************** PREFOOTER **************************/
 .prefooter {
   background: #001232;
   display: flex;
@@ -726,7 +821,6 @@ nav {
   .prefooter .column {
     display: flex;
     flex: 1;
-    justify-content: center;
     color: #64728A;
     font-weight: 300;
     padding: 30px 20px; }
@@ -863,6 +957,8 @@ nav {
             .prefooter .keep-touch .social ul li:hover i {
               color: #000000; }
 
+/************************** /PREFOOTER **************************/
+/************************** FOOTER **************************/
 .footer {
   height: 100px;
   background: #000F2B;
@@ -876,6 +972,8 @@ nav {
     .footer .text .special {
       color: #ffd626; }
 
+/************************** /FOOTER **************************/
+/************************** RESPONSIVE **************************/
 @media screen and (min-width: 320px) and (max-width: 990px) {
   .container {
     margin-left: 2%; }
@@ -1207,5 +1305,6 @@ nav {
       height: 120px; }
     .prefooter .keep-touch .social ul {
       width: 160px; } }
+/************************** /RESPONSIVE **************************/
 
 /*# sourceMappingURL=style.css.map */
