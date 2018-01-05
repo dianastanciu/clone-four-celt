@@ -123,7 +123,7 @@
     flex: 1; }
   .two-columns .image, .about .image, .choose .image {
     flex: 1;
-    background: url(../../images/about4.jpg);
+    background: url(../../images/about4-min.jpg);
     background-size: cover;
     background-position: center; }
   .two-columns .text, .about .text, .choose .text {
@@ -158,7 +158,7 @@
         display: flex;
         flex: 1; }
       .three-columns .container .item .image, .features .container .item .image, .news .container .item .image {
-        background: url(../../images/about1.jpg);
+        background: url(../../images/about1-min.jpg);
         background-size: cover;
         background-position: center;
         height: 300px; }
@@ -385,7 +385,7 @@ nav {
   background: #fff;
   top: 70px;
   position: relative;
-  background: url("../../images/background1.jpg");
+  background: url("../../images/background1-min.jpg");
   background-size: cover;
   background-attachment: fixed; }
   .header:before {
@@ -488,13 +488,13 @@ nav {
       width: 25%;
       height: 350px; }
     .featured-works .featured-items .scroll-parent .one {
-      background: url("../../images/project1.jpg"); }
+      background: url("../../images/project1-min.jpg"); }
     .featured-works .featured-items .scroll-parent .two {
-      background: url("../../images/project2.jpg"); }
+      background: url("../../images/project2-min.jpg"); }
     .featured-works .featured-items .scroll-parent .three {
-      background: url("../../images/project3.jpg"); }
+      background: url("../../images/project3-min.jpg"); }
     .featured-works .featured-items .scroll-parent .four {
-      background: url("../../images/project4.jpg"); }
+      background: url("../../images/project4-min.jpg"); }
     .featured-works .featured-items .scroll-parent .one, .featured-works .featured-items .scroll-parent .two, .featured-works .featured-items .scroll-parent .three, .featured-works .featured-items .scroll-parent .four {
       position: relative;
       background-size: cover;
@@ -619,7 +619,7 @@ nav {
 .choose {
   height: 600px; }
   .choose .image {
-    background: url(../../images/choose.jpg);
+    background: url(../../images/choose-min.jpg);
     background-position: right; }
   .choose .tabs-container {
     width: 100%;
@@ -736,7 +736,7 @@ nav {
       margin-top: 60px; }
       .news .container .item-container .item .image {
         border-bottom: 5px solid #ffd626;
-        background: url(../../images/news.jpg);
+        background: url(../../images/news-min.jpg);
         background-position: center; }
       .news .container .item-container .item .info {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1185,7 +1185,7 @@ nav {
 
   .about, .choose {
     position: relative;
-    background: url(../../images/about4.jpg);
+    background: url(../../images/about4-min.jpg);
     background-size: cover;
     background-position: top center; }
     .about .text, .choose .text {
@@ -1197,7 +1197,7 @@ nav {
       display: none; }
 
   .choose {
-    background: url(../../images/choose.jpg); } }
+    background: url(../../images/choose-min.jpg); } }
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .container {
     width: 90%;
@@ -1206,7 +1206,7 @@ nav {
   .about .image {
     display: block;
     flex: 1;
-    background: url(../../images/about4.jpg);
+    background: url(../../images/about4-min.jpg);
     background-size: cover; }
     .about .image img {
       display: none; }
