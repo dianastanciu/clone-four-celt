@@ -866,6 +866,27 @@ html {
             justify-content: space-around;
             .map, .phone, .mail {
                 display: flex;
+
+                .text {
+                    position: relative;
+                    z-index: 1;
+
+                    @extend .before-p;
+                   
+                    &:before { height: 90%;}
+
+                    &:hover {
+                        color: $dark;
+
+                        @extend .pointer;
+        
+                        &:before { 
+                            @extend .hover-state; 
+                        }
+    
+                        a {color: $dark;}
+                    }
+                }
             }
         }
 
