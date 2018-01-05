@@ -1,6 +1,6 @@
 /************************** EXTEND **************************/
 /*item after hover*/
-.hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
+.hover-state-origin, .before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .prefooter .info .address .map .text:before, .prefooter .info .address .phone .text:before, .prefooter .info .address .mail .text:before, .btn-before:before, .header .container .title-container .btn:before, .btn-before-blue:before, .featured-works .btn-container .btn:before, .contact .btn:before, .contact-prefooter .btn:before {
   animation: hoverStateOrigin .2s forwards; }
 @keyframes hoverStateOrigin {
   0% {
@@ -8,7 +8,7 @@
   100% {
     transform: scaleY(0); } }
 /*item:hover*/
-.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .contact-prefooter .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before {
+.hover-state, .btn-before:hover:before, .header .container .title-container .btn:hover:before, .btn-before-blue:hover:before, .featured-works .btn-container .btn:hover:before, .contact .btn:hover:before, .contact-prefooter .btn:hover:before, .three-columns .container .item .text p:hover:before, .features .container .item .text p:hover:before, .news .container .item .text p:hover:before, .top-bar-container .container .adr:hover p:before, .top-bar-container .container .tel:hover p:before, .top-bar-container .container .em:hover p:before, nav .container .items .hom p:hover:before, nav .container .items .abt p:hover:before, nav .container .items .proj p:hover:before, nav .container .items .serv p:hover:before, nav .container .items .blg p:hover:before, nav .container .items .cntc p:hover:before, nav .container .items .src p:hover:before, .services .services-items .items-container .item .text p:hover:before, .prefooter .info .address .map .text:hover:before, .prefooter .info .address .phone .text:hover:before, .prefooter .info .address .mail .text:hover:before {
   animation: hoverState .2s forwards; }
 @keyframes hoverState {
   0% {
@@ -16,11 +16,11 @@
   100% {
     transform: scaleY(1); } }
 /*item:hover - pointer*/
-.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover, .prefooter .links .links-container .links-1 ul li:hover, .prefooter .links .links-container .links-2 ul li:hover, .prefooter .keep-touch .form .input-btn:hover, .prefooter .keep-touch .social ul li:hover {
+.pointer, .three-columns .container .item .text p:hover, .features .container .item .text p:hover, .news .container .item .text p:hover, .top-bar-container .container .adr:hover, .top-bar-container .container .tel:hover, .top-bar-container .container .em:hover, nav .container .items .hom p:hover, nav .container .items .abt p:hover, nav .container .items .proj p:hover, nav .container .items .serv p:hover, nav .container .items .blg p:hover, nav .container .items .cntc p:hover, nav .container .items .src p:hover, nav .container .items .hom .hidden-drop-menu .item:hover, nav .container .items .proj .hidden-drop-menu .item:hover, nav .container .items .serv .hidden-drop-menu .item:hover, nav .container .items .blg .hidden-drop-menu .item:hover, nav .container .items .src:hover, .header .container .title-container .btn:hover, .featured-works .btn-container .btn:hover, .services .services-items .items-container .item .text p:hover, .choose .tabs-container .tab .tab-title:hover, .contact .btn:hover, .contact-prefooter .btn:hover, .prefooter .info .address .map .text:hover, .prefooter .info .address .phone .text:hover, .prefooter .info .address .mail .text:hover, .prefooter .links .links-container .links-1 ul li:hover, .prefooter .links .links-container .links-2 ul li:hover, .prefooter .keep-touch .form .input-btn:hover, .prefooter .keep-touch .social ul li:hover {
   cursor: pointer; }
 
 /*p:before*/
-.before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before {
+.before-p:before, .three-columns .container .item .text p:before, .features .container .item .text p:before, .news .container .item .text p:before, .top-bar-container .container .adr p:before, .top-bar-container .container .tel p:before, .top-bar-container .container .em p:before, nav .container .items .hom p:before, nav .container .items .abt p:before, nav .container .items .proj p:before, nav .container .items .serv p:before, nav .container .items .blg p:before, nav .container .items .cntc p:before, nav .container .items .src p:before, .services .services-items .items-container .item .text p:before, .prefooter .info .address .map .text:before, .prefooter .info .address .phone .text:before, .prefooter .info .address .mail .text:before {
   content: "";
   width: 103%;
   height: 100%;
@@ -799,6 +799,15 @@ nav {
       justify-content: space-around; }
       .prefooter .info .address .map, .prefooter .info .address .phone, .prefooter .info .address .mail {
         display: flex; }
+        .prefooter .info .address .map .text, .prefooter .info .address .phone .text, .prefooter .info .address .mail .text {
+          position: relative;
+          z-index: 1; }
+          .prefooter .info .address .map .text:before, .prefooter .info .address .phone .text:before, .prefooter .info .address .mail .text:before {
+            height: 90%; }
+          .prefooter .info .address .map .text:hover, .prefooter .info .address .phone .text:hover, .prefooter .info .address .mail .text:hover {
+            color: #000000; }
+            .prefooter .info .address .map .text:hover a, .prefooter .info .address .phone .text:hover a, .prefooter .info .address .mail .text:hover a {
+              color: #000000; }
     .prefooter .info i {
       color: #ffd626;
       margin-right: 10px; }
