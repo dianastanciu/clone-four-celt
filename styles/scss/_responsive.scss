@@ -431,6 +431,15 @@
         flex-direction: column;
         padding: 0 5px;
 
+        .links {
+            .links-container {
+                .links-1 {
+                    ul {
+                        li { padding: 13px 0;}
+                    }
+                }
+            }
+        }
         .column {
             padding-bottom: 10px;
         }
@@ -446,11 +455,34 @@
         }
 
         .keep-touch {
-            .description {height: 120px;}
+            .description, .title {height: auto;}
+            .form {
+                justify-content: flex-start;
+            }
             .social {
-                ul {width: 160px;}
+                ul {width: 160px; margin: 0;}
             }
         }
     }
 }
+
+@media screen and (min-width: 993px) and (max-width: 1173px) {
+    .prefooter {
+        .keep-touch {
+            .form {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .input-text {
+                   padding: 0 10px 0 7px;
+                }
+                .input-btn {
+                    margin: 0;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
 /************************** /RESPONSIVE **************************/
