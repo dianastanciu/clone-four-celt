@@ -9,7 +9,7 @@
 * Used the website solely as a mock-up/visual guide for what the page was going to look like and what behaviours it would have.
 
 **Tools**: 
-* HTML, SCSS/CSS, JavaScript/jQuery, Git
+* HTML, SCSS/CSS, JavaScript/jQuery
 
 **Coded by**: @dianastanciu
 
